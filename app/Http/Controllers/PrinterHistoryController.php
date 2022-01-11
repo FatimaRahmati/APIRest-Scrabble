@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class PrinterHistoryController extends Controller
 {
     // gestiona la renderización de las páginas sobre la imprenta
-    public function index(Request $request) {
-
+    public function index(Request $request)
+    {
         $uri = $request->path();
 
         $data = InfoController::generateGeneralInfo();
@@ -42,11 +42,11 @@ class PrinterHistoryController extends Controller
             case "imprenta-en-espana":
                 $layout = "prn_extra7";
                 break;
+            case "creditos":
+                $layout = "prn_creditos";
+                break;
         }
-            
+
         return view($layout, $data);
     }
-
-
-    
 }
