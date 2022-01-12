@@ -55,7 +55,7 @@ class InfoController extends Controller
     }
 
     // renderiza la página de información o información extra del scrabble
-    public function index()
+    public function index($request)
     {
         $uri = $request->path();
 
