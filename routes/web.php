@@ -65,7 +65,7 @@ Route::prefix("scrabble")->group(function () {
 
     Route::get("/", "InfoController@index");
 
-    Route::get("/extra-info", "InfoController@index");
+    Route::get("/info-extra", "InfoController@index");
 
     // búsqueda de usuarios
     Route::middleware("auth")
