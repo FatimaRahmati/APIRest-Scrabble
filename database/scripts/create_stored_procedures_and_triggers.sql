@@ -23,6 +23,7 @@ DELIMITER //
 DROP FUNCTION IF EXISTS CalculateLevel;
 CREATE FUNCTION CalculateLevel(won INT, lost INT)
     RETURNS INT
+    DETERMINISTIC
     BEGIN
         DECLARE level, played INT;
         SET played = won + lost;
