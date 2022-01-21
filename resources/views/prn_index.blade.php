@@ -9,20 +9,21 @@
     <div class="row p-0" id="gradient-header">
         <div class="col-12 text-center mx-auto p-5">
             <div class="f-prime large thirds">
-                Image Cards with Gradient Content
+                ¿Quieres conocer uno de los mayores avances de la humanidad?
             </div>
             <div class="f-second text-light">
-                Designed by <a href="https://bootsnipp.com/sarwal" target="_blank" class="text-light">sarwal</a>.
+                Navega por nuestra web y conoce todo sobre cómo se originó la imprenta.
+                <!-- Designed by <a href="https://bootsnipp.com/sarwal" target="_blank" class="text-light">sarwal</a>.
                 Inspired by <a href="https://bootsnipp.com/YvesWassersleben" target="_blank"
                     class="text-light">YvesWassersleben</a>.
-                Images referenced from <a href="https://pixabay.com/" target="_blank" class="text-light">pixabay</a>.
+                Images referenced from <a href="https://pixabay.com/" target="_blank" class="text-light">pixabay</a>. -->
             </div>
         </div>
     </div>
     <div class="row bg-dark p-0">
         <div class="col-12 p-0">
             <div class="row mx-auto p-5">
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 mx-auto p-2 card">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 p-2 card">
                     <div class="thumbnail">
                         <img src="img/01 Gutenberg.jpg">
                         <div class="caption">
@@ -30,37 +31,14 @@
                                 Gutenberg
                             </div>
                             <div class="f-third text-light">
-                                Lorem ipsum dolor sit amet.
+                                Creador de la imprenta contemporánea.
                             </div>
                             <hr>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer
-                                feugiat scelerisque varius morbi. Augue neque gravida in fermentum et sollicitudin ac.
-                                Cursus sit amet dictum sit amet justo donec enim diam.
-                            </p>
-                            <div class="mb-0">
-                                <a href="#link" class="btn btn-card">Sigue leyendo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 mx-auto p-2 card">
-                    <div class="thumbnail">
-                        <img src="img/08 Trabajadores imprenta 3.png">
-                        <div class="caption">
-                            <div class="f-prime sml primes">
-                                Trabajos en el S.XV
-                            </div>
-                            <div class="f-third text-light">
-                                Lorem ipsum dolor sit amet.
-                            </div>
-                            <hr>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer
-                                feugiat scelerisque varius morbi. Augue neque gravida in fermentum et sollicitudin ac.
-                                Cursus sit amet dictum sit amet justo donec enim diam.
+                                Gutenberg nació en Magnucia, Alemania, alrededor del 1400 en la casa paterna llamada
+                                zum Gutenberg. Su apellido verdadero es Genfleisch (en dialecto alemán renano este
+                                apellido tiene semejanza, si es que no significa, "carne de ganso", por lo que el
+                                inventor prefierió usar el apellido por el cual es conocido)...
                             </p>
                             <div class="mb-0">
                                 <a href="/gutenberg" class="btn btn-card">Sigue leyendo</a>
@@ -68,71 +46,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 mx-auto p-2 card">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 p-2 card">
                     <div class="thumbnail">
-                        <img src="img/11 Europa e imprenta2.png">
+                        <img src="img/08 Trabajadores imprenta 2.png">
+                        <div class="caption">
+                            <div class="f-prime sml primes">
+                                Trabajos
+                            </div>
+                            <div class="f-third text-light">
+                                Los primeros trabajos creados.
+                            </div>
+                            <hr>
+                            <p>
+                                Por eso, en una imprenta del siglo XV se necesitaban fundamentalmente 3 personas:
+                                El componedor: Realiza el trabajo más delicado. A medida que lee el manuscrito coloca
+                                en una cajita, una a una, todas las piezas de metal con letras y espacios que forman
+                                una línea. Debe hacerlo en orden...
+                            </p>
+                            <div class="mb-0">
+                                <a href="/gutenberg" class="btn btn-card">Sigue leyendo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 p-2 card">
+                    <div class="thumbnail">
+                        <img src="img/mapa2.jpg">
                         <div class="caption">
                             <div class="f-prime sml primes">
                                 Difusión
                             </div>
                             <div class="f-third text-light">
-                                Lorem ipsum dolor sit amet.
+                                La idea Gutenberg viaja por Europa.
                             </div>
                             <hr>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer
-                                feugiat scelerisque varius morbi. Augue neque gravida in fermentum et sollicitudin ac.
-                                Cursus sit amet dictum sit amet justo donec enim diam.
+                                La idea de Gutenberg de las letras individuales grabadas en metal se difunde por Europa.
+                                Comienza en Mainz (hacia 1450), y a continuación, van surgiendo las primeras imprentas
+                                en las principales ciudades europeas, como Venecia, París, Brujas, Segovia, Valencia,
+                                Westminster, entre los años 1450 y 1476...
                             </p>
                             <div class="mb-0">
-                                <a href="#link" class="btn btn-card">Sigue leyendo</a>
+                                <a href="/gutenberg" class="btn btn-card">Sigue leyendo</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 mx-auto p-2 card">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 p-2 card">
                     <div class="thumbnail">
-                        <img src="img/14 valencian bible2.jpg">
+                        <img src="img/14 valencian bible3.jpg">
                         <div class="caption">
                             <div class="f-prime sml primes">
-                                Primeros libros
+                                Libros
                             </div>
                             <div class="f-third text-light">
-                                Lorem ipsum dolor sit amet.
+                                El sinodal de Aguilafuente en 1472.
                             </div>
                             <hr>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer
-                                feugiat scelerisque varius morbi. Augue neque gravida in fermentum et sollicitudin ac.
-                                Cursus sit amet dictum sit amet justo donec enim diam.
+                                El primer libro impreso en España fue El Sinodal de Aguila Fuente en 1472 en Segovia.
+                                Por su parte, los tres primeros impresos en Valencia con el procedimiento de Gutenberg
+                                fueron: Obres o trobes en laors de la Verge Maria, Comprehensorium, la Biblia
+                                Valenciana. Todos ellos impresos entre...
                             </p>
                             <div class="mb-0">
-                                <a href="#link" class="btn btn-card">Sigue leyendo</a>
+                                <a href="/gutenberg" class="btn btn-card">Sigue leyendo</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12 mx-auto p-2 card">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 p-2 card">
                     <div class="thumbnail">
                         <img src="img/17 portal valldigna 3.jpg">
                         <div class="caption">
                             <div class="f-prime sml primes">
-                                Valencia y la imprenta
+                                En Valencia
                             </div>
                             <div class="f-third text-light">
-                                Lorem ipsum dolor sit amet.
+                                Lugares emblemáticos de la imprenta en Valencia.
                             </div>
                             <hr>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Viverra adipiscing at in tellus integer
-                                feugiat scelerisque varius morbi. Augue neque gravida in fermentum et sollicitudin ac.
-                                Cursus sit amet dictum sit amet justo donec enim diam.
+                                Lugares emblemáticos de las primeras imprentas en Valencia con el procedimiento
+                                de Gutenberg. El Molí de Rovella: En la confluencia de las actuales calles Barón
+                                de Carcer y Pie de la Creu estuvo ubicada la primera imprenta en Valencia. Monasterio
+                                de Santa María del Puig, Imprenta de...
                             </p>
                             <div class="mb-0">
-                                <a href="#link" class="btn btn-card">Sigue leyendo</a>
+                                <a href="/gutenberg" class="btn btn-card">Sigue leyendo</a>
                             </div>
                         </div>
                     </div>

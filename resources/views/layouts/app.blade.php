@@ -19,11 +19,13 @@
     <!--MENÚ DE NAVEGACIÓN / HEADER-->
     <nav class="navbar sticky-top bg-dark navbar-dark ">
         <a class="navbar-brand" href="#">Descubre la imprenta</a>
-        <a class="" href="https://www.ceedcv.es"><img class="" width="150px"
-                alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class=""><a href="https://www.ceedcv.es"><img class="" width="140px"
+                    alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="nav-item">
                 <h5 class="h5"><a class="typografy-stylo nav-link" href="#">Área Imprenta</a>
