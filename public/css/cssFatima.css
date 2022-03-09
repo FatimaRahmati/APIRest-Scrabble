@@ -1,8 +1,102 @@
-.prueba{
-    background-color: rgb(209, 209, 209);
-    width: 100%;
-    height: 100%;
+/*COLORES DE LA PÁGINA*/
+/* 
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.light-secondary-color { background: #d6dfe4; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #009688; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; } 
+ */
+
+:root{
+    /*Paleta de colores*/
+    --dark-primary-color: #455A64;
+    --default-primary-color: #607D8B; 
+    --light-primary-color: #CFD8DC; 
+    --light-secondary-color: #d6dfe4;
+    --text-primary-color: #FFFFFF; 
+    --accent-color: #009688;
+    --primary-text-color: #212121;
+    --secondary-text-color: #707070;
+    --divider-color: #BDBDBD;
 }
+
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family:'Cardo', serif;
+    font-size: 1.35rem;
+    line-height: 160%;
+    text-align: justify;
+    background-color: var(--light-secondary-color); /*Ojo, mirar como se ponía lo de las variables*/    
+    width: 100%;
+    height: 100%; 
+}
+
+
+/*BARRA PROGRESO*/
+
+.content{    
+    position: relative;
+    
+}
+
+.content:before{
+    content: "";
+    display: block;
+    background: linear-gradient(to right top, var(--default-primary-color) 0%, var(--accent-color) 50%, var(--light-primary-color) 50%);
+    height: calc(100% - 100vh + 12px);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.content:after{
+    content: "";
+    display: block;
+    background:var(--light-primary-color);
+    height: calc(100vh - 12px);    
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;       
+    bottom: 0;
+    left: 0;  
+}
+
+.barra{    
+    position: relative;   
+    z-index: 1;
+    margin-bottom: calc(-90vh + 12px)
+}
+
+
+
+/*TIPOGRAFÍAS*/
+h1{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2.8rem;
+    color: var(--primary-text-color);
+}
+
+h2{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 2.2rem;
+    color: var(--secondary-text-color);
+}
+
+.pie-cdo{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-text-color);
+}
+
 
 .typografy-stylo{
     color:white;
@@ -13,107 +107,44 @@
     padding-left: 0px;    
 }
 
+/*CLASES PARA MODIFICAR LAS IMÁGENES*/
+
 .remove-bg{
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     
 }
 
-
-/*SNIPPET CARDS*/
-/* Gradient Header Styling ************************************************** */
-#gradient-header {
-    background: linear-gradient(110deg, #7C99B4, #161B33);
-}
-#gradient-footer {
-    background: linear-gradient(110deg, #161B33, #7C99B4);
-}
-
-/* Defining Font Families *************************************************** */
-.f-prime {
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.f-second, .f-third {
-    font-family: 'Oxygen', sans-serif;
-    font-weight: normal;
+.imagen-Gutenberg{
+    background-image: url("../img/01\ Gutenberg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 18rem;
+    height: 20rem;
+    background-size: 15rem;
+   
 }
 
-/* Defining Font Sizing ***************************************************** */
-.large {
-    font-size: 2.5rem;
-}
-.med {
-    font-size: 2rem;
-}
-.sml {
-    font-size: 1.5rem;
-}
 
-/* Defining Font Colors ***************************************************** */
-.primes {
-    color: #172A3A;
-}
-.seconds {
-    color: #4C5C68;
-}
-.thirds {
-    color: #A0B9BF;
-}
 
-/* Card Styling ************************************************************* */
-.card {
-    background-color: transparent;
-    border: 0px;
-    
-    
-}
-.card .thumbnail {
-    background-color: #FFFFFF;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
-    border: 0px;
-    border-radius: 0px;
-    padding: 0px;
-    text-align: center;
-}
-.card .thumbnail .caption {
-    background: linear-gradient(45deg, #4C5C68, #A0B9BF);
-    margin: -20px 20px 20px 20px;
-    padding: 19px 29px 19px 29px;
-    position: relative;
-    border: 0px;
-}
-.card .thumbnail .caption hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    margin: 20px 40px;
-}
-.card .thumbnail .caption p {
-    font-weight: normal;
-    font-size: 0.8rem;
-    color: #FFFFFF;
-}
-.card .thumbnail .caption .btn-card {
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    font-weight: normal;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.25rem 1.25rem;
-    color: #FFFFFF;
-    transition: 0.5s ease;
-    border-radius: 0px;
-}
-.card .thumbnail .caption .btn-card:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
-}
-.card .thumbnail img {
+/*BARRA DE NAVEGACIÓN NAVBAR*/
+
+.navegacion{    
+    position:relative;
+    background-image: url("../img/letras.jpg");
+    background-repeat: repeat-x;
+    background-position: 0% 25%;
+    background-size: 120rem;
     width: 100%;
-    height: auto;
+    height: 5rem;
+    padding: 0;
 }
 
-/*FIN SNIPPET CARDS*/
+.navegacion::before{
+    content: "";
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.47);
+    width: 100%;
+    height: 5rem;
+   
+}

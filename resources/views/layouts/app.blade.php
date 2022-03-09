@@ -6,98 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <title>
-
-    </title>
+    <title></title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/cssFatima.css') }}" rel="stylesheet" />
-
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap');
+    </style>
 </head>
 
 <body>
 
     <!--MENÚ DE NAVEGACIÓN / HEADER-->
-    <nav class="navbar sticky-top bg-dark navbar-dark ">
-        <a class="navbar-brand" href="#">Descubre la imprenta</a>
-        <div class=""><a href="https://www.ceedcv.es"><img class="" width="140px"
-                    alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+    <nav class="navbar navegacion">
 
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav-item">
-                <h5 class="h5"><a class="typografy-stylo nav-link" href="#">Área Imprenta</a>
-                </h5>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gutenberg</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trabajos en el S.XV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Difusión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Primeros libros España</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lugares emblemáticos Valencia</a>
-                    </li>
-                </ul>
-                </li>
-                <h5 class="h5"><a class="typografy-stylo nav-link" href="#">Área Scrabble</a>
-                </h5>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cómo jugar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicia Sesión</a>
-                    </li>
-                </ul>
-
-            </ul>
-        </div>
     </nav>
 
-
-    <main class="prueba">
+    <main class="">
         @yield('content')
     </main>
 
 
 
+    <!-- Footer -->
+    <footer class="text-center bg-secondary text-light">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Register for free</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                        Sign up!
+                    </button>
+                </p>
+            </section>
+            <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
 
-    <!--FOOTER-->
-    <section class="">
-        <!-- Footer -->
-        <footer class="text-center bg-secondary text-light">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: CTA -->
-                <section class="">
-                    <p class="d-flex justify-content-center align-items-center">
-                        <span class="me-3">Register for free</span>
-                        <button type="button" class="btn btn-outline-light btn-rounded">
-                            Sign up!
-                        </button>
-                    </p>
-                </section>
-                <!-- Section: CTA -->
-            </div>
-            <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-dark">
+            Fátima María Rahmatí Barberá. Diseño de Interfaces Web. 2021-2022
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3 bg-dark">
-                Fátima María Rahmatí Barberá. Diseño de Interfaces Web. 2021-2022
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-    </section>
 
 
     <!-- Scripts -->
