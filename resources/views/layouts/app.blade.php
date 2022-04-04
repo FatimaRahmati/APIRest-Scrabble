@@ -12,13 +12,42 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap');
     </style>
+    <script src="https://kit.fontawesome.com/1f856bd712.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <!--MENÚ DE NAVEGACIÓN / HEADER-->
-    <nav class="navbar navegacion">
+    <nav class="navbar navbar-expand-md overlay" id="barraNav">
 
+        <button class="navbar-toggler navegacion float-left" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <div class="navegacion iconoNav"><i class="fa-solid fa-bars"></i>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse despliegue" id="collapsibleNavbar">
+            <ul class="navbar-nav nav-typografy">
+                <li class="nav-item">
+                    <a class="nav-link nav-typografy" href="#gutenberg">Gutenberg</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-typografy" href="#trabajos">Trabajos en el S.XV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-typografy" href="#difusion">Difusión de la idea</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-typografy" href="#españa">Primeros libros en España</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-typografy" href="#valencia">Lugares emblemáticos en Valencia</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navegacion pr-4"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
+                    alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a></div>
     </nav>
 
     <main class="">
@@ -56,6 +85,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jsFatima.js') }}"></script>
     @foreach ($js_files as $file)
     <script src="{{ asset('js/' . $file . '.js') }}"></script>
     @endforeach
