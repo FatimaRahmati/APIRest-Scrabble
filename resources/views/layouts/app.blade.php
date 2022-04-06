@@ -50,7 +50,7 @@
                     alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a></div>
     </nav>
 
-    <main class="">
+    <main>
         @yield('content')
     </main>
 

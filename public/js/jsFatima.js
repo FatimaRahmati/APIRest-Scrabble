@@ -32,10 +32,12 @@ returnTirador.addEventListener('click', () => {
 let obras = document.getElementById("obres");
 let compren = document.getElementById("comprensorium");
 let valencian = document.getElementById("valencian");
+let libros = document.getElementById("spainbooks");
 
 obras.addEventListener("mouseover", selectElement);
 compren.addEventListener("mouseover", selectElement);
 valencian.addEventListener("mouseover", selectElement);
+/* libros.addEventListener("mouseout", exitElement); */
 
 /* obras.addEventListener("mouseout", exitElement);
 compren.addEventListener("mouseout", exitElement);
@@ -80,20 +82,38 @@ function selectElement(event){
 
 
 /* function exitElement(event){
-    event.target;
-    const obrasClass = obras.className;
-    const obrasClasses = currentClass.split(" ");  
-    obras.classList.remove(obrasClasses[1]);
-    obras.classList.add('centro-izquierda');
 
-    const comprenClass = compren.className;
-    const comprenClasses = comprenClass.split(" ");  
-    compren.classList.remove(comprenClasses[1]);
-    compren.classList.add('set-center');
-
-    const valencianClass = valencian.className;
-    const valencianClasses = valencianClass.split(" ");  
-    valencian.classList.remove(valencianClasses[1]);
-    valencian.classList.add('centro-derecha');
+    if (event.currentTarget){
+        console.log(event.target);
+        const obrasClass = obras.className;
+        const obrasClasses = obrasClass.split(" ");  
+        obras.classList.remove(obrasClasses[1]);
+        obras.classList.add('centro-izquierda');
+    
+        const comprenClass = compren.className;
+        const comprenClasses = comprenClass.split(" ");  
+        compren.classList.remove(comprenClasses[1]);
+        compren.classList.add('set-center');
+    
+        const valencianClass = valencian.className;
+        const valencianClasses = valencianClass.split(" ");  
+        valencian.classList.remove(valencianClasses[1]);
+        valencian.classList.add('centro-derecha');
+    }     
 
 } */
+
+
+
+
+/*Averiguar coordenadas*/
+/* let mapa = document.querySelector(".map");
+
+mapa.addEventListener('click', showCoords);
+
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    console.log(coords);
+  } */

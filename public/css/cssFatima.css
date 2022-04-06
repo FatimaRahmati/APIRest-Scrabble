@@ -27,6 +27,10 @@
     --jobs-height: 25rem;
 
 
+    /*Diffusion elements*/
+    --wrapper-width: 55rem;
+    --wrapper-height: 28rem;
+
 
     /*Carousel elements*/
     --carousel-width: 18rem;
@@ -84,7 +88,7 @@ body{
 
 .barra{    
     position: relative;   
-    z-index: 100;
+    z-index: 20;
     margin-bottom: calc(-90vh + 12px);
 }
 
@@ -255,6 +259,17 @@ h4{
     cursor: pointer;
 }
 
+
+.rotateCheck{
+    transform: rotate(180deg);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+#botonLeer input[name="despliega"]:checked{
+    transform: rotate(0deg);
+}
+
  
 /* ---------------Qué fue lo que inventó--------------- */
 
@@ -276,12 +291,10 @@ h4{
 
 #lista {
     list-style-type: none;
-    list-style-type: decimal !ie; /*IE 7- hack*/
-     
+    list-style-type: decimal !ie; /*IE 7- hack*/     
     margin: 0;
     margin-left: 4rem;
-    padding: 0;
-    
+    padding: 0;    
     counter-reset: li-counter;
 }
 
@@ -289,8 +302,10 @@ h4{
     position: relative;
     box-shadow: inset 0px 0px 12px 2px var(--primary-text-color);
     color: var(--text-primary-color);
+    font-size: 1.2rem;
     margin-bottom: 30px;
-    padding: 1rem;
+    height: auto;
+    padding: 0.4rem 0.4rem 0.4rem 1.2rem;
     border-left: 2px solid #CCCCCC;
     background-color: var(--default-primary-color);
 }
@@ -301,7 +316,7 @@ h4{
     left: -0.95em;
     width: 1em;
  
-    font-size: 3.5em;
+    font-size: 3em;
     
     line-height: 1;
     font-weight: bold;
@@ -451,11 +466,212 @@ h4{
     border-bottom-right-radius: 4px;
 }
 
-/* #returncomposer > .boton{
-    margin-right: 1rem;
-} */
+
+
+
+
 
 /*------------------------------DIFUSIÓN DE LA IMPRENTA----------------------------------*/
+
+/*-------Indiana Jones Map---------*/
+
+.wrapper {
+    position: relative;
+    /* width: var(--wrapper-width);
+    height: var(--wrapper-height); */
+    max-width: var(--wrapper-width);
+    max-height: var(--wrapper-height);
+    /* margin: 50px; */
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.print {
+    position: absolute;
+    top: calc(0.2*var(--wrapper-height));
+    left: calc(calc(0.5*var(--wrapper-width)) - calc(0.8*20rem));
+    width: 20rem;
+    height: auto;
+    z-index: 10000;
+    opacity: 0.4;
+}
+
+
+.map {
+    width: 70rem;
+}
+
+.map-wrapper {
+    position: relative;
+    animation: animateMap 10s linear forwards;
+}
+
+@keyframes animateMap {
+    0% {
+      transform: translate(0, -250px);
+    }
+    44% {
+      transform: translate(-500px, -150px);
+    }
+    73% {
+      transform: translate(-650px, -500px);
+    }
+    100% {
+      transform: translate(-800px, -500px);
+    }
+}
+
+/* svg {
+    position: absolute;
+    top: 350px;
+    left: 270px;
+} */
+
+.indy {
+    stroke-dasharray: 1250px;
+    stroke-dashoffset: 1250px;
+    animation: dash 10s linear forwards;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+/*.circle {
+    width: 25px;
+    height: 25px;
+    background: #ce1616;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    animation: 0.3s animateDot forwards;
+    transform: scale(0);
+}
+ */
+  @keyframes animateDot {
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .mainz {
+    top: 350;
+    left: 600px;
+  }
+
+  .venetia {
+    animation-delay: 4.4s;
+    top: 345px;
+    left: 805px;
+  }
+
+  .paris {
+    animation-delay: 7.3s;
+    top: 685px;
+    left: 940px;
+  }
+
+  .brujas {
+    animation-delay: 10s;
+    top: 725px;
+    left: 1260px;
+  }
+
+  .segovia {
+    animation-delay: 10s;
+    top: 725px;
+    left: 1260px;
+  }
+
+  .valencia {
+    animation-delay: 10s;
+    top: 725px;
+    left: 1260px;
+  }
+
+  .westmin {
+    animation-delay: 10s;
+    top: 725px;
+    left: 1260px;
+  }
+
+
+
+ /*Europe Map SVG*/
+
+.europemap{
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+
+.str1 {
+    stroke: var(--secondary-text-color);
+    stroke-width: 0.0523025;
+}
+
+.str2 {
+    stroke: var(--secondary-text-color);
+    stroke-width: 0.0523025;
+    stroke-linecap: round;
+    stroke-linejoin: round
+}
+
+.str0 {
+    stroke: var(--secondary-text-color);
+    stroke-width: 0.1372771;
+}
+
+.fil1 {
+    fill: var(--divider-color);
+}
+
+.fil0 {
+    fill: var(--default-primary-color);
+}
+
+
+#diffusion-map circle{
+    fill: var(--accent-color);
+    stroke: black;
+    stroke-width: 0.04;
+}
+
+#diffusion-map text{
+    fill: black;
+    font-size: 0.0rem;
+
+}
+
+
+.map-path{
+    stroke: rgb(207, 46, 46);
+    stroke-width: 0.25;
+    fill:rgba(0, 0, 0, 0);
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: movement 25s linear forwards;
+}
+
+
+@keyframes movement {
+
+   to{
+       stroke-dashoffset: 0;       
+   }
+    
+   from{
+       stroke-dashoffset: 100;
+   }
+}
+
+/* @keyframes cities {
+
+} */
+
 
 
 /*Tooltips*/
@@ -542,6 +758,7 @@ h4{
     box-shadow: 0 0 2px 1px rgb(179, 179, 179); 
     background-color: rgb(240, 238, 208);
     padding: 1.1rem;
+    cursor: pointer;
 }
 
 .img-position{
@@ -606,48 +823,61 @@ h4{
     position:relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 5px;
 }
   
   /* Create four equal columns that sits next to each other */
 #lugares-valencia .column {
     flex: 25%;
     max-width: 33.3%;
-    padding: 0 4px;
+    padding: 0 5px;
+}
+
+#lugares-valencia .container{
+    position:relative;
 }
   
 #lugares-valencia .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    /* filter: grayscale(1) brightness(0.5); */
+    margin-top: 10px;
+    vertical-align: middle;   
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s linear;
+    cursor: pointer;    
+    position: relative;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-
-.img-gallery-content{
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    cursor: pointer; 
     position: absolute;
+    top: 50%;
+    left: 50%;
     z-index: 2;
-    width: cover;
-    height: cover;
-    color:white;
-    visibility: hidden;
-    top: 2rem;
-    left: 3rem;    
-    border: 2px solid red;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-/* .img-gallery-content:hover{
-    visibility: visible;
-    filter: grayscale(1) brightness(0.5);
-} */
+#lugares-valencia .container:hover .middle{
+    opacity: 1;
+}
 
- #lugares-valencia .column img:hover, .img-gallery-content:hover {
-    filter: grayscale(1) brightness(0.5);
-    visibility: visible;
-  }
+.text {   
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+#lugares-valencia .container:hover img{
+    filter: grayscale(1) brightness(0.3);    
+    
+}
 
 
   @media screen and (max-width: 800px) {
