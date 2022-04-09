@@ -1,0 +1,181 @@
+
+  
+/*-----------------------------------------SCRABBLE-------------------------------*/
+
+/*---Pasos de registro---*/
+
+.gamesteps{
+    /* position: relative; */
+  
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    height: 15rem;
+/*     overflow: hidden; */
+}
+
+.step{
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 18px solid rgba(255, 254, 254, 0.877);
+    background-color: var(--dark-primary-color);
+}
+
+.step > p{
+    font-family: 'Urbanist';
+    font-size: 3rem;    
+    color:white;
+    
+}
+
+.step::before{
+    content: "";
+    position: absolute;
+    top: -18px;
+    transform: rotate(45deg);
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 18px solid transparent;   
+}
+
+[data-name=one]::before{
+    border-top-color: #00f0d4;
+}
+
+[data-name=two]::before{
+   /*  border-top-color: #00f0d4; */
+    border-top-color: #00ceb6;
+    border-right-color: #00ceb6;
+    
+}
+[data-name=three]::before{
+    border-top-color: #00ac98;
+    border-right-color: #00ac98;
+    border-bottom-color: #00ac98;
+}
+[data-name=four]::before{
+    border-top-color: #008a7a;
+    border-right-color: #008a7a;
+    border-bottom-color: #008a7a;
+    border-left-color: #008a7a;
+}
+
+.step > div{
+    position: absolute;
+    width: 9rem;
+    height: 11rem;
+    top: 2.8rem;
+    z-index:-1;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: inset 0 0 10px 5px rgb(179, 179, 179); 
+    background-color: var(--dark-primary-color);
+    padding: 1.1rem;
+    overflow: hidden;
+    
+}
+
+.step a{
+    position: absolute;
+    width: 9rem;
+    height: fit-content;
+    top: 8.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Urbanist';
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;    
+    transition: font-size 0.4s;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+
+.step a span{
+    font-size: 1.5rem;
+}
+
+.step a:hover{
+    font-size: 2rem;
+}
+
+
+
+
+
+/*--------Carousel benefits-----------*/
+.carousel-benefits{
+  /*   width: 50vw; */
+ /*    max-width: 20rem; */
+    height: 10rem;
+}
+
+#benefits p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#benefits h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+/*-----Información del juego-----------*/
+.gameinfo{
+/*     width: 18vw; */
+    height: 100%;
+    min-width: 20rem;
+    display: block;
+    float: right;
+    padding: 0; 
+    margin: 0;        
+}
+
+.gameinfo > ul{
+    list-style-type: none;
+}
+
+.gameinfo > ul li {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.gameicons{
+    font-size: 2rem;
+}
+
+
+
+
+/*------Noticias------*/
+
+#gamenews{
+  
+}
+
+.news{
+    /* float: left; */
+}
+
+
+
+
+
+/*--------MEDIA QUERYS------------*/
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1000px;
+    }
+}

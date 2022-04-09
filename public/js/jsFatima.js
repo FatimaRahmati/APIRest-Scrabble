@@ -1,7 +1,7 @@
 //LOS TRABAJOS EN UNA IMPRENTA DEL S.XV.
 
-let forwardComposer = document.querySelector("#forward-composer > a");
 let forwardFinally = document.querySelector("#forward-finally > a");
+let forwardComposer = document.querySelector("#forward-composer > a");
 let returnComposer = document.querySelector("#returncomposer > a");
 let returnTirador = document.querySelector("#returntirador > a");
 

@@ -51,7 +51,7 @@ body{
     font-size: 1.35rem;
     line-height: 2rem;
     background-color: var(--light-secondary-color); /*Ojo, mirar como se ponía lo de las variables*/    
-    width: 100%;
+    width: 100vw;
     height: 100%; 
 }
 
@@ -88,7 +88,7 @@ body{
 
 .barra{    
     position: relative;   
-    z-index: 20;
+    z-index: 4;
     margin-bottom: calc(-90vh + 12px);
 }
 
@@ -120,11 +120,7 @@ h4{
     color: var(--secondary-text-color);
 }
 
-.nav-typografy{
-    color: var(--light-primary-color);
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-}
+
 
 
 /*------------------------------BARRA DE NAVEGACIÓN NAVBAR-------------------------------------------*/
@@ -141,6 +137,11 @@ h4{
     padding: 0;    
 }
 
+.navbar{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .navegacion{    
     z-index: 2;
 }
@@ -148,15 +149,23 @@ h4{
 .despliegue{
     background-color: rgba(255, 255, 255, 0);    
     z-index:20;
-    padding-left: 5rem;     
+   /*  padding-left: 5rem;  */    
 }
 
 .img-link{
     filter: saturate(250%) brightness(2);
 }
 
+
+.nav-typografy{
+    color: var(--light-primary-color);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+
 .nav-item{
-    margin-right: 1rem;
+    margin-right: 0.6rem;
 }
 
 .nav-link{
@@ -164,7 +173,7 @@ h4{
 }
 
 .nav-link:hover{
-    font-size: 1.36rem;
+    font-size: 1.25rem;
     font-weight: bold;
     color: var(--light-primary-color);
 }
@@ -184,10 +193,6 @@ h4{
 }
 
 
-
-.modal-backdrop{
-    z-index:90;
-}
 
 
 /*CLASES PARA MODIFICAR LAS IMÁGENES*/
@@ -218,6 +223,27 @@ h4{
     margin-right: 1.8rem;
 }
 
+
+
+.rotatecheck{
+    transform: rotate(180deg);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.rotatecheck:active{
+    transform: rotate(0deg);
+}
+
+/* #botonLeer input:checked + label{
+    transform: rotate(0deg);
+    
+} */
+
+ 
+/* ---------------Qué fue lo que inventó--------------- */
+
+/*Imgágenes*/
 .imagen-invento{      
     display: inline-block;
     position: relative;   
@@ -259,19 +285,42 @@ h4{
     cursor: pointer;
 }
 
-
-.rotateCheck{
-    transform: rotate(180deg);
-    transition: transform 1s;
-    cursor: pointer;
+.imagen-invento-prensa{
+    display: inline-block;
+    position: relative;   
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;     
+    width: 21rem;
+    height: 26rem;   
 }
 
-#botonLeer input[name="despliega"]:checked{
-    transform: rotate(0deg);
+.imagen-invento-prensa:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: inset 0px 0px 25px 12px black;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;    
+    top:0;
+    bottom: 0;
 }
 
- 
-/* ---------------Qué fue lo que inventó--------------- */
+.imagen-invento-prensa img{
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;    
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
 
 /*Lista*/
 
@@ -345,21 +394,17 @@ h4{
     height: auto;
     margin-left:0;
     padding-left:0;
-    /* border: 2px solid red; */
+     
 }
 
 .boton{
     width: 100%;
     height: 2.5rem;
     display: flex;
+    overflow: hidden;
     align-items: center;  
     justify-content: center; 
-    background-color: var(--dark-primary-color);    
-    /* border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; */
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    /* box-shadow: 0 0 3px 3px var(--default-primary-color);     */
+    background-color: var(--dark-primary-color);  
 }
 
 .botonlink{     
@@ -370,27 +415,44 @@ h4{
 
 .boton:hover{
     box-shadow: 0 0 3px 3px var(--default-primary-color);    
-    /* transition: box-shadow 1s; */
+
 }
 
 .botonlink:hover{
     color: var(--text-primary-color);
     font-weight: bold;
-    text-decoration: none;  
-    /* transition: font-weight 1s   */
+    text-decoration: none;     
+}
+
+
+#begin, #returncomposer, #returntirador .boton{
+    border-top-left-radius: 4px;
+   
 }
 
 .forward-button{
     width: 8rem;
-    height: var(--jobs-height);
+    height: auto;
     display: flex;
     align-items: center;  
     justify-content: center; 
     background-color: var(--dark-primary-color);    
-    /* border-top-right-radius: 4px; */
-    border-bottom-right-radius: 4px;
-    /* box-shadow: inset 0 0 15px 6.5px #94938f; */   
-    
+    border-top-right-radius: 4px;
+        
+}
+
+.forward-button:hover{
+    box-shadow: 0 0 3px 3px var(--default-primary-color);    
+}
+
+.forward{
+    width: 8rem;
+    height: auto;
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    background-color: var(--dark-primary-color);     
+    border-bottom-right-radius: 4px;      
 }
 
 .back-layer1{    
@@ -401,8 +463,7 @@ h4{
     box-shadow: inset 0 0 15px 6.5px #94938f;
     width: auto;
     height: var(--jobs-height);
-    /* padding-left:0; */
-   /*  border: 2px dotted hotpink;    */ 
+   
 }
 
 .back-layer1:hover{
@@ -421,7 +482,7 @@ h4{
     box-shadow: inset 0 0 15px 6.5px #94938f;
     width: auto;
     height: var(--jobs-height);
- /*    border: 2px dotted hotpink;  */   
+ 
 }
 
 .back-layer2:hover{
@@ -440,7 +501,7 @@ h4{
     box-shadow: inset 0 0 15px 6.5px #94938f;
     width: auto;
     height: var(--jobs-height);
-   /*  border: 2px dotted hotpink;     */
+
 }
 
 .back-layer3:hover{
@@ -473,156 +534,30 @@ h4{
 
 /*------------------------------DIFUSIÓN DE LA IMPRENTA----------------------------------*/
 
-/*-------Indiana Jones Map---------*/
-
-.wrapper {
-    position: relative;
-    /* width: var(--wrapper-width);
-    height: var(--wrapper-height); */
-    max-width: var(--wrapper-width);
-    max-height: var(--wrapper-height);
-    /* margin: 50px; */
-    overflow: hidden;
-    border: 1px solid black;
-}
-
-.print {
-    position: absolute;
-    top: calc(0.2*var(--wrapper-height));
-    left: calc(calc(0.5*var(--wrapper-width)) - calc(0.8*20rem));
-    width: 20rem;
-    height: auto;
-    z-index: 10000;
-    opacity: 0.4;
-}
-
-
-.map {
-    width: 70rem;
-}
-
-.map-wrapper {
-    position: relative;
-    animation: animateMap 10s linear forwards;
-}
-
-@keyframes animateMap {
-    0% {
-      transform: translate(0, -250px);
-    }
-    44% {
-      transform: translate(-500px, -150px);
-    }
-    73% {
-      transform: translate(-650px, -500px);
-    }
-    100% {
-      transform: translate(-800px, -500px);
-    }
-}
-
-/* svg {
-    position: absolute;
-    top: 350px;
-    left: 270px;
-} */
-
-.indy {
-    stroke-dasharray: 1250px;
-    stroke-dashoffset: 1250px;
-    animation: dash 10s linear forwards;
-  }
-
-  @keyframes dash {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-/*.circle {
-    width: 25px;
-    height: 25px;
-    background: #ce1616;
-    position: absolute;
-    z-index: 100;
-    border-radius: 50%;
-    animation: 0.3s animateDot forwards;
-    transform: scale(0);
-}
- */
-  @keyframes animateDot {
-    to {
-      transform: scale(1);
-    }
-  }
-
-  .mainz {
-    top: 350;
-    left: 600px;
-  }
-
-  .venetia {
-    animation-delay: 4.4s;
-    top: 345px;
-    left: 805px;
-  }
-
-  .paris {
-    animation-delay: 7.3s;
-    top: 685px;
-    left: 940px;
-  }
-
-  .brujas {
-    animation-delay: 10s;
-    top: 725px;
-    left: 1260px;
-  }
-
-  .segovia {
-    animation-delay: 10s;
-    top: 725px;
-    left: 1260px;
-  }
-
-  .valencia {
-    animation-delay: 10s;
-    top: 725px;
-    left: 1260px;
-  }
-
-  .westmin {
-    animation-delay: 10s;
-    top: 725px;
-    left: 1260px;
-  }
-
-
-
- /*Europe Map SVG*/
+/*Europe Map SVG*/
 
 .europemap{
     position: relative;
-    width: 100vw;
-    height: auto;
+    width: 50vw;
+    height: auto;  
 }
 
 
 .str1 {
-    stroke: var(--secondary-text-color);
+    stroke: var(--primary-text-color);
     stroke-width: 0.0523025;
 }
 
 .str2 {
-    stroke: var(--secondary-text-color);
+    stroke: var(--primary-text-color);
     stroke-width: 0.0523025;
     stroke-linecap: round;
     stroke-linejoin: round
 }
 
 .str0 {
-    stroke: var(--secondary-text-color);
-    stroke-width: 0.1372771;
+    stroke: var(--primary-text-color);
+    stroke-width: 0.08;
 }
 
 .fil1 {
@@ -630,7 +565,7 @@ h4{
 }
 
 .fil0 {
-    fill: var(--default-primary-color);
+    fill: var(--dark-primary-color);
 }
 
 
@@ -643,6 +578,7 @@ h4{
 #diffusion-map text{
     fill: black;
     font-size: 0.0rem;
+    font-weight: bold;
 
 }
 
@@ -667,69 +603,6 @@ h4{
        stroke-dashoffset: 100;
    }
 }
-
-/* @keyframes cities {
-
-} */
-
-
-
-/*Tooltips*/
-.pretooltip{
-    width: 2.5rem;
-    height: 2.5rem;
-    color: black; 
-    cursor: pointer;
-    opacity: 100%;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;  
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1.6rem;    
-}
-  
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 12rem;
-    background-color: black;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 1rem;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 10;
-    top: 0px;
-    left: 75%;    
-}
-  
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent black transparent transparent;
-}
-
-.pretooltip:visited{
-    opacity:100%;
-}
-
-.pretooltip:hover{
-    opacity: 100%;
-}
-
-.tooltip:hover .tooltiptext{    
-    visibility: visible;    
-}
-
-
 
 
 
@@ -880,15 +753,19 @@ h4{
 }
 
 
-  @media screen and (max-width: 800px) {
+
+
+/*-------------------------------------MEDIA QUERYS-------------------------------*/
+
+@media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
-  }
+}
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
       flex: 100%;
       max-width: 100%;
@@ -896,29 +773,9 @@ h4{
     .column img {
       filter: grayscale(0) brightness(1);
     }
-  }
-  
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------MEDIA QUERYS-------------------------------*/
 @media (min-width: 1200px) {
     .container {
       max-width: 1000px;
@@ -932,6 +789,7 @@ h4{
     }
 }
 
+
 @media (max-width: 768px){ /*Tamaño tableta tumbada*/
     .despliegue{
         background-color: var(--dark-primary-color);        
@@ -942,10 +800,24 @@ h4{
     .nav-typografy{   
         align-items:flex-start;     
         text-align: left;
+        padding-bottom: 1rem;
     }
+
+    .europemap{
+        width: 90vw;
+    }
+
+    
 }
 
 @media (max-width: 576px){
+
+    :root{
+        --carousel-width: 15rem;
+        --carousel-height: 25rem;
+    }
+
+
     .imagen-Gutenberg{        
         float: none !important;
         margin-left: auto;
@@ -959,6 +831,8 @@ h4{
 
     body{
         text-align: center;
-    }
+    }    
+
+
 }
 

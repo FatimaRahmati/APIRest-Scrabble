@@ -73,9 +73,14 @@
                         últimos años de vida, siempre será reconocido como el inventor de la imprenta moderna.</p>
                 </div>
             </div>
-            <div class="text-center mb-3"><a id="botonLeer" class="pie-cdo" data-toggle="collapse"
-                    href="#leermas"><span><input type="checkbox" name="despliega"><label class="darlavuelta"
-                            for="despliega"><i class="fa-solid fa-circle-up"></i></label></span></a>
+            <div class="text-center mb-3">
+                <a id="botonLeer" class="" data-toggle="collapse" href="#leermas">
+                    <div class="rotatecheck"><i class="fa-regular fa-circle-up"></i></div>
+                </a>
+                <!--       <input type="checkbox" name="openmore">
+                <label for="openmore" class="rotatecheck" data-toggle="collapse" data-target="#leermas"><i
+                        class="fa-regular fa-circle-up"></i></label> -->
+                <!--   </a> -->
             </div>
 
 
@@ -112,91 +117,50 @@
                     “El sutra del diamante”, con signos grabados en una única madera.</p>
 
                 <div class="d-flex flex-wrap justify-content-around mt-4">
-                    <div class="">
-
-                        <div class="imagen-invento" data-toggle="modal" data-target="#img1">
-                            <img src="../img/02Sutradeldiamante.png">
-                        </div>
-
-                        <div class="modal fade" id="img1">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body"><button type="button" class="close"
-                                            data-dismiss="modal">&times;</button>
-
-                                        <img src="../img/02Sutradeldiamante.png">
-                                    </div>
+                    <div class="d-flex flex-wrap justify-content-around mt-4">
+                        <div>
+                            <a href="../img/02Sutradeldiamante.png">
+                                <div class="imagen-invento">
+                                    <img src="../img/02Sutradeldiamante.png">
                                 </div>
-                            </div>
+                            </a>
+                            <div class="pie-cdo text-center pt-2">El Sutra del Diamante British Library</div>
                         </div>
-
-                        <div class="pie-cdo text-center pt-2">El Sutra del Diamante British Library</div>
                     </div>
-                    <div>
 
-                        <div class="imagen-invento" data-toggle="modal" data-target="#img2">
-                            <img src="../img/03 Tipos chinos en madera.jpg">
-                        </div>
-
-                        <div class="modal fade" id="img2">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body"><button type="button" class="close"
-                                            data-dismiss="modal">&times;</button>
-
-                                        <img src="../img/03 Tipos chinos en madera.jpg">
-                                    </div>
+                    <div class="d-flex flex-wrap justify-content-around mt-4">
+                        <div>
+                            <a href="../img/03 Tipos chinos en madera.jpg">
+                                <div class="imagen-invento">
+                                    <img src="../img/03 Tipos chinos en madera.jpg">
                                 </div>
-                            </div>
+                            </a>
+                            <div class="pie-cdo text-center pt-2">Tipos chinos en madera</div>
                         </div>
-
-                        <!--  <a href="../img/03 Tipos chinos en madera.jpg">
-                            <div class="imagen-invento">
-                                <img src="../img/03 Tipos chinos en madera.jpg">
-                            </div>
-                        </a> -->
-                        <div class="pie-cdo text-center pt-2">Tipos chinos en madera</div>
                     </div>
                 </div>
 
                 <div class="d-flex flex-wrap justify-content-around mt-4">
-                    <div class="">
-
-                        <div class="imagen-invento" data-toggle="modal" data-target="#img3">
-                            <img src="../img/04 Fundidor de tipos de Gutenberg.png">
-                        </div>
-
-                        <div class="modal fade" id="img3">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body"><button type="button" class="close"
-                                            data-dismiss="modal">&times;</button>
-                                        <img src="../img/04 Fundidor de tipos de Gutenberg.png">
-                                    </div>
+                    <div class="d-flex flex-wrap justify-content-around mt-4">
+                        <div>
+                            <a href="../img/04 Fundidor de tipos de Gutenberg.png">
+                                <div class="imagen-invento">
+                                    <img src="../img/04 Fundidor de tipos de Gutenberg.png">
                                 </div>
-                            </div>
+                            </a>
+                            <div class="pie-cdo text-center pt-2">Fundidor de tipos de Gutenberg</div>
                         </div>
-
-                        <div class="pie-cdo text-center pt-2">Fundidor de tipos de Gutenberg</div>
                     </div>
-                    <div>
 
-                        <div class="imagen-invento" data-toggle="modal" data-target="#img4">
-                            <img src="../img/05 tipos moviles metal gutenberg.jpeg">
-                        </div>
-
-                        <div class="modal fade" id="img4">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body"><button type="button" class="close"
-                                            data-dismiss="modal">&times;</button>
-                                        <div class="imagen-invento"><img
-                                                src="../img/05 tipos moviles metal gutenberg.jpeg"></div>
-                                    </div>
+                    <div class="d-flex flex-wrap justify-content-around mt-4">
+                        <div>
+                            <a href="../img/05 tipos moviles metal gutenberg.jpeg">
+                                <div class="imagen-invento">
+                                    <img src="../img/05 tipos moviles metal gutenberg.jpeg">
                                 </div>
-                            </div>
+                            </a>
+                            <div class="pie-cdo text-center pt-2">Tipos móviles metal Gutenberg</div>
                         </div>
-                        <div class="pie-cdo text-center pt-2">Tipos móviles metal Gutenberg</div>
                     </div>
                 </div>
 
@@ -238,7 +202,7 @@
                 <div class="d-flex flex-wrap justify-content-around mt-4">
                     <div>
                         <a href="../img/07 Prensa_de_Gutenberg Replica.png">
-                            <div class="imagen-invento">
+                            <div class="imagen-invento-prensa">
                                 <img id="imgPrensa" src="../img/07 Prensa_de_Gutenberg Replica.png">
                             </div>
                         </a>
@@ -280,18 +244,21 @@
 
             <div id="jobs">
                 <!-- COMPONEDOR -->
-                <div id="componedor" class="container collapse show bloque my-4 mx-auto">
+                <div id="componedor" class="container collapse show bloque my-4 px-0 mx-auto">
                     <div class="d-flex justify-content-center">
-                        <div class="boton"><a class="botonlink" data-toggle="collapse"
+                        <div id="begin" class="boton"><a class="botonlink" data-toggle="collapse"
                                 href="#subcomponedor, #componedorimg">¿Cómo
                                 empezamos?</a>
                         </div>
+                        <div id="forward-composer" class="forward-button"><a data-toggle="collapse" class="botonlink"
+                                href=" #yahora, #returncomposer, #entintador"> >> </a>
+                        </div>
                     </div>
 
-                    <div id="subcomponedor" class="container collapse mx-auto">
+                    <div id="subcomponedor" class="container collapse show mx-auto">
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-sm-12 px-0">
-                                <div id="componedorimg" class="collapse">
+                                <div id="componedorimg" class="collapse show">
                                     <a data-toggle="collapse" data-target="#paragraph1">
                                         <div class="back-layer1"></div>
                                     </a>
@@ -316,8 +283,9 @@
                                             página.
                                         </div>
                                     </div>
-                                    <div id="forward-composer" class="forward-button"><a data-toggle="collapse"
-                                            class="botonlink" href=" #yahora, #returncomposer, #entintador"> >> </a>
+                                    <div class="forward">
+                                        <!-- <a data-toggle="collapse"
+                                            class="botonlink" href=" #yahora, #returncomposer, #entintador"> >> </a> -->
                                     </div>
                                 </div>
                             </div>
@@ -335,10 +303,15 @@
                                     << </a>
                             </div>
 
-                            <div id="yahora" class="col-lg-11 col-md-11 col-sm-11 collapse boton"><a class="botonlink"
+                            <div id="yahora" class="col-lg-10 col-md-10 col-sm-10 collapse boton"><a class="botonlink"
                                     data-toggle="collapse" href="#subentintador, #entintadorimg">¿Y
                                     ahora qué?</a>
                             </div>
+                            <div id="forward-finally" class="col-lg-1 col-md-1 col-sm-1  forward-button"><a
+                                    data-toggle="collapse" class="botonlink"
+                                    href="#finally, #returntirador, #tirador">>></a>
+                            </div>
+
                         </div>
                     </div>
 
@@ -364,8 +337,7 @@
                                             tinta, uno en cada mano.
                                         </div>
                                     </div>
-                                    <div id="forward-finally" class="forward-button"><a data-toggle="collapse"
-                                            class="botonlink" href="#finally, #returntirador, #tirador">>></a>
+                                    <div class="forward">
                                     </div>
                                 </div>
                             </div>
@@ -438,12 +410,13 @@
         <div class="container mt-5">
             <h1 id="difusion" class="primary-text-color py-2">DIFUSIÓN DE LA IDEA</h1>
 
-            <div>
+            <div class="text-center py-4">
                 ¡Admira como la imprenta fue implantándose por Europa!
             </div>
 
-            <div id="diffusion-map" class="container p-0 europemap mt-5 mx-auto">
-                <svg viewBox="0 0 60 40">
+            <div id="diffusion-map" class="container p-0 europemap my-1 mx-auto">
+                <div class="back"></div>
+                <svg viewBox="-2 -1 55 35">
                     <g id="Layer_x0020_1">
                         <g id="_289750144">
                             <polygon id="_254062672" class="fil0"
@@ -3158,8 +3131,6 @@
                         begin="valencia-appear.end + 3.2s" fill="freeze" id="westmin-appear" />
                     <animate xlink:href="#westmin-text" attributeName="font-size" from="0rem" to="0.065rem" dur="0.5s"
                         begin="westmin-appear.end + 0.1s" fill="freeze" />
-
-
                 </svg>
 
             </div>
@@ -3242,7 +3213,7 @@
                             </div>
                         </div>
 
-                        <div class="column">
+                        <div class="column ">
                             <div class="container p-0 m-0">
                                 <img src="../img/17 portal valldigna 2.jpg">
                                 <div class="middle">
@@ -3258,30 +3229,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <h4>El Molí de Rovella</h4>
-                        <p>
-                            En la confluencia de las actuales calles Barón de Cárcer y Pie de la Cruz estuvo ubicada
-                            la
-                            primera
-                            imprenta en València.</p>
-
-                        <h4> Monasterio de Santa María del Puig</h4>
-                        <p> Alberga el Museo de la Imprenta y contiene una réplica exacta de
-                            la imprenta utilizada Gutenberg y que se conserva en Maguncia (Alemania).</p>
-
-                        <h4> Imprenta de Palmart</h4>
-                        <p> Junto al Portal de la Valladigna se situaron los talleres de imprenta de donde salieron:
-                            “Trobes
-                            en
-                            laors de la Verge María”, “Comprehensorium”, “Biblia valenciana” .</p>
-
-                        <h4>Imprenta Patricio Mey</h4>
-                        <p>
-                            En el número 3 de la calle San Vicente se imprimió la segunda edición de "Don Quijote de
-                            la
-                            Mancha".
-                        </p> -->
 
             </div>
             <div>
