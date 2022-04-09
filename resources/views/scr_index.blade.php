@@ -5,7 +5,7 @@
 @section('content')
 
 
-<div class="container-fluid px-0 mx-auto my-3">
+<div id="scrabble-page" class="container-fluid px-0 mx-auto my-3">
 
     <div class="row">
         <!-- Noticias del Ceed o de otro sitio-->
@@ -40,32 +40,32 @@
                     <!--      <div class="gamesteps"> -->
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="one">
-                            <p class="align-self-center m-0">1</p>
+                            <p class="align-self-center m-0"><i class="fa-solid fa-circle-user"></i></p>
                             <!--  <div></div> -->
-                            <a href="#">ÚNETE</a>
+                            <!-- <a href="#">ÚNETE<i class="fa-solid fa-circle-user"></i></a> -->
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="two">
-                            <p class="align-self-center m-0">2</p>
+                            <p class="align-self-center m-0"><i class="fa-solid fa-spell-check"></i></p>
                             <!-- <div></div> -->
-                            <a href="#"><span>ELIGE</span> IDIOMA</a>
+                            <!-- <a href="#"><span>ELIGE</span> IDIOMA<i class="fa-solid fa-language"></i></a> -->
                         </div>
                         <!--  <div class="stepcontent"><a href="#">Idioma</a></div> -->
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="three">
-                            <p class="align-self-center m-0">3</p>
+                            <p class="align-self-center m-0"><i class="fa-solid fa-users"></i></p>
                             <!--   <div></div> -->
-                            <a href="#"><span>ELIGE</span> AMIGO</a>
+                            <!--  <a href="#"><span>ELIGE</span> AMIGO<i class="fa-solid fa-people-arrows-left-right"></i></a> -->
                         </div>
                         <!--   <div class="stepcontent"><a href="#">Amigo</a></div> -->
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="four">
-                            <p class="align-self-center m-0">4</p>
+                            <p class="align-self-center m-0"><i class="fa-solid fa-chess-board"></i></p>
                             <!--     <div></div> -->
-                            <a href="#"><span>ELIGE</span> PARTIDA</a>
+                            <!--  <a href="#"><span>ELIGE</span> PARTIDA<i class="fa-solid fa-chess-board"></i></a> -->
                         </div>
                         <!-- <div class="stepcontent"><a href="#">Partida</a></div> -->
                     </div>
@@ -73,8 +73,8 @@
                 </div>
             </div>
 
-            <div class="loginbutton">
-                <a href="#login">REGÍSTRATE</a>
+            <div class="boton">
+                <a class="botonlink" href="#login">REGÍSTRATE</a>
             </div>
 
 
