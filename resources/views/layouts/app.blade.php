@@ -19,7 +19,7 @@
 <body>
     <div id="">
         <!--MENÚ DE NAVEGACIÓN / HEADER-->
-        <nav class="navbar navbar-expand-md overlay" id="barraNav">
+        <nav class="navbar navbar-expand-xl overlay" id="barraNav">
 
             <button class="navbar-toggler navegacion float-left" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavbar">
@@ -30,29 +30,36 @@
             <div class="collapse navbar-collapse despliegue" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-typografy">
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="/#gutenberg">Gutenberg</a>
+                        <a class="nav-link nav-typografy" href="../#app">Gutenberg</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="/#trabajos">Trabajos en el S.XV</a>
+                        <a class="nav-link nav-typografy" href="../#trabajos">Trabajos en el S.XV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="/#difusion">Difusión de la idea</a>
+                        <a class="nav-link nav-typografy" href="../#difusion">Difusión de la idea</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="/#españa">Primeros libros en España</a>
+                        <a class="nav-link nav-typografy" href="../#españa">Primeros libros en España</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="#lugares-valencia">Lugares emblemáticos en Valencia</a>
+                        <a class="nav-link nav-typografy" href="../#lugares-valencia">Lugares emblemáticos en
+                            Valencia</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-typografy" href="scrabble">Scrabble</a>
                     </li>
-                    <li>
-                        <div class="navegacion pr-4"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
-                                    alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
-                        </div>
-                    </li>
+                    <!-- <li>
+                        
+                    </li> -->
                 </ul>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="navbar-brand pr-2"><a href="dashboard"><i class="fa-solid fa-circle-user"
+                            style="font-size: 40px; color: white"></i></a>
+                </div>
+                <div class="navbar-brand pr-2"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
+                            alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
+                </div>
             </div>
         </nav>
 

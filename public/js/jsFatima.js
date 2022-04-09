@@ -1,3 +1,23 @@
+//GUTENBERG - BOTÓN LEER MÁS
+let leermasButton = document.getElementById('botonLeer');
+leermasButton.addEventListener('click', changeContent);
+console.log(leermasButton);
+let leermasDiv = document.getElementById('leermas');
+console.log(leermasDiv);
+console.log(leermasDiv.classList.contains('show') );
+
+function changeContent(){
+
+    if(leermasDiv.classList.contains('show') == true){
+        leermasButton.innerHTML = "............. Leer más .............";
+    }else{
+        leermasButton.innerHTML = "............. Leer menos ............."
+    }
+}
+
+
+
+
 //LOS TRABAJOS EN UNA IMPRENTA DEL S.XV.
 
 let forwardFinally = document.querySelector("#forward-finally > a");

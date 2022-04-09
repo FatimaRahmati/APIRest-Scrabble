@@ -22,6 +22,7 @@
     --primary-text-color: #212121;
     --secondary-text-color: #707070;
     --divider-color: #BDBDBD;
+    --contrast-color:#894E76;
 
     /*S.XV elements*/
     --jobs-height: 25rem;
@@ -52,7 +53,7 @@ body{
     line-height: 2rem;
     background-color: var(--light-secondary-color); /*Ojo, mirar como se ponía lo de las variables*/    
     width: 100%;
-    height: 100%; 
+ /*    height: calc(90vh - 80px - 60px); */
 }
 
 
@@ -120,8 +121,12 @@ h4{
     color: var(--secondary-text-color);
 }
 
+/*------------------------------FOOTER---------------------*/
 
-
+footer{
+    position: relative;
+    
+}
 
 /*------------------------------BARRA DE NAVEGACIÓN NAVBAR-------------------------------------------*/
 

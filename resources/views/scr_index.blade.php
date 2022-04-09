@@ -5,11 +5,11 @@
 @section('content')
 
 
-<div id="scrabble-page" class="container-fluid px-0 mx-auto my-3">
+<div id="scrabble-page" class="container-fluid px-0 mx-auto">
 
     <div class="row">
         <!-- Noticias del Ceed o de otro sitio-->
-        <div id="gamenews" class="col-sm-6 col-md-6 col-lg-3">
+        <div id="gamenews" class="col-sm-6 col-md-6 col-lg-2 align-self-center">
             <div class="news">
                 <div class="ceednews">
                     <ul class="newslist">
@@ -33,47 +33,55 @@
         </div>
 
 
-        <div id="centralcontent" class="col-sm-12 col-md-12 col-lg-6">
+        <div id="centralcontent" class="col-sm-12 col-md-12 col-lg-7 align-self-center">
             <!-- Pasos para jugar -->
-            <div class="container">
-                <div class="row gamesteps">
-                    <!--      <div class="gamesteps"> -->
+            <div class="container p-0 m-0">
+                <div class="row gamesteps my-4">
+
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="one">
-                            <p class="align-self-center m-0"><i class="fa-solid fa-circle-user"></i></p>
-                            <!--  <div></div> -->
-                            <!-- <a href="#">ÚNETE<i class="fa-solid fa-circle-user"></i></a> -->
+                            <a href="#">
+                                <p class="d-flex justify-content-center align-items-center m-0"><i
+                                        class="fa-solid fa-circle-user"></i></p>
+                            </a>
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="two">
-                            <p class="align-self-center m-0"><i class="fa-solid fa-spell-check"></i></p>
-                            <!-- <div></div> -->
-                            <!-- <a href="#"><span>ELIGE</span> IDIOMA<i class="fa-solid fa-language"></i></a> -->
+                            <a href="#">
+                                <p class="d-flex justify-content-center align-items-center m-0"><i
+                                        class="fa-solid fa-spell-check"></i></p>
+                            </a>
                         </div>
-                        <!--  <div class="stepcontent"><a href="#">Idioma</a></div> -->
                     </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="three">
-                            <p class="align-self-center m-0"><i class="fa-solid fa-users"></i></p>
-                            <!--   <div></div> -->
-                            <!--  <a href="#"><span>ELIGE</span> AMIGO<i class="fa-solid fa-people-arrows-left-right"></i></a> -->
+                            <a href="#">
+                                <p class="d-flex justify-content-center align-items-center m-0"><i
+                                        class="fa-solid fa-users"></i></p>
+                            </a>
                         </div>
-                        <!--   <div class="stepcontent"><a href="#">Amigo</a></div> -->
                     </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="step d-flex justify-content-center" data-name="four">
-                            <p class="align-self-center m-0"><i class="fa-solid fa-chess-board"></i></p>
-                            <!--     <div></div> -->
-                            <!--  <a href="#"><span>ELIGE</span> PARTIDA<i class="fa-solid fa-chess-board"></i></a> -->
+                            <a href="#">
+                                <p class="d-flex justify-content-center align-items-center m-0"><i
+                                        class="fa-solid fa-chess-board"></i></p>
+                            </a>
                         </div>
-                        <!-- <div class="stepcontent"><a href="#">Partida</a></div> -->
                     </div>
-                    <!--                     </div> -->
+
                 </div>
+                <!--   <div class="text-center">¡Únete a nosotros, selecciona la idioma para jugar, elige a un amigo y
+                    comienza
+                    tu
+                    partida!</div> -->
             </div>
 
-            <div class="boton">
+            <div class="container boton mt-4">
                 <a class="botonlink" href="#login">REGÍSTRATE</a>
             </div>
 
@@ -90,10 +98,10 @@
                         <li data-target="#benefits" data-slide-to="2"></li>
                     </ol>
 
-
+                    <h5>¿Por qué jugar al Scrabble? </h5>
                     <div class="carousel-inner">
                         <div class="carousel-item active benefits-content">
-                            <h5>Mejora el vocabulario y la ortografía</h5>
+                            <h6>Mejora el vocabulario y la ortografía</h6>
                             <p>Si juega Scrabble va a mejorar su vocabulario. Con más de 180.000 palabras en
                                 el
                                 diccionario oficial de Scrabble estará obligado a aprender una nueva definición o dos

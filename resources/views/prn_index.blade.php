@@ -73,27 +73,12 @@
                         últimos años de vida, siempre será reconocido como el inventor de la imprenta moderna.</p>
                 </div>
             </div>
-            <div class="text-center mb-3">
-                <a id="botonLeer" class="" data-toggle="collapse" href="#leermas">
-                    <div class="rotatecheck"><i class="fa-regular fa-circle-up"></i></div>
-                </a>
-                <!--       <input type="checkbox" name="openmore">
-                <label for="openmore" class="rotatecheck" data-toggle="collapse" data-target="#leermas"><i
-                        class="fa-regular fa-circle-up"></i></label> -->
-                <!--   </a> -->
-            </div>
 
 
-            <!-- Buscar el evento onlick para ver si lo puedo modificar con el "leer más / leer menos" -->
-
-            <!-- Podríamos utilizar un checkbox para determinar que un elemento esté o no seleccionado. Y con ello controlar
-            el estado del div. Posteriormente, en función de su está o no seleccionado, podríamos aplicar una transición
-            a una imagen o icono, para que pueda estar hacia arriba o hacia abajo. -->
-
-            <!-- <div class="colapsar text-center mb-3"><a id="botonLeer" class="pie-cdo" data-toggle="collapse"
+            <div class="colapsar text-center mb-3"><a id="botonLeer" class="pie-cdo" data-toggle="collapse"
                     href="#leermas">.............
                     Leer
-                    menos .............</a></div> -->
+                    más .............</a></div>
             <div>
                 <p class="pie-cdo text-right float-right">Fuente Wikipedia</p>
                 <div>
@@ -3179,9 +3164,9 @@
             </h1>
             <div>
                 Lugares emblemáticos de las primeras imprentas en València con el procedimiento de
-                Gutenberg.
+                Gutenberg:
 
-                <div class="container-fluid p-0 m-0">
+                <div class="container-fluid p-0 my-4">
                     <div class="row">
                         <div class="column">
                             <div class="container p-0 m-0">
