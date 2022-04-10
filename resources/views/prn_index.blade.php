@@ -3171,14 +3171,18 @@
                         <div class="column">
                             <div class="container p-0 m-0">
                                 <img class="" src="../img/15 Valencia.Mercado_Central.jpg">
-                                <div class="middle">
-                                    <div class="text">Mercado Central</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Molí de rovella
+                                    <a href="https://goo.gl/maps/3YwciwyikXic3PQ88"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
                             <div class="container p-0 m-0">
                                 <img src="../img/19b calle san vicente Patricio May.png">
-                                <div class="middle">
-                                    <div class="text">Molí de rovella</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Imprenta Patricio Mey
+                                    <a href="https://goo.gl/maps/6f4yxh47e5ezu9oz6"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
 
@@ -3186,14 +3190,18 @@
                         <div class="column">
                             <div class="container p-0 m-0">
                                 <img src="../img/19 calle san vicente patricio mey 2.jpg">
-                                <div class="middle">
-                                    <div class="text">Imprenta Patricio Mey</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Imprenta Patricio Mey
+                                    <a href="https://goo.gl/maps/6f4yxh47e5ezu9oz6"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
                             <div class="container p-0 m-0">
                                 <img src="../img/17 portal valldigna 1.jpg">
-                                <div class="middle">
-                                    <div class="text">Imprenta de Palmart</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Imprenta de Palmart
+                                    <a href="https://goo.gl/maps/9jGBKGmYUGpLdYih8"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -3201,14 +3209,18 @@
                         <div class="column ">
                             <div class="container p-0 m-0">
                                 <img src="../img/17 portal valldigna 2.jpg">
-                                <div class="middle">
-                                    <div class="text">Imprenta de Palmart</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Imprenta de Palmart
+                                    <a href="https://goo.gl/maps/9jGBKGmYUGpLdYih8"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
                             <div class="container p-0 m-0">
                                 <img src="../img/16 El Puig Monasterio.jpg">
-                                <div class="middle">
-                                    <div class="text">Monasterio del Puig</div>
+                                <div class="d-flex align-items-center justify-content-center middle">
+                                    Monasterio del Puig
+                                    <a href="https://goo.gl/maps/3wzBABrygTpgLL2V6"><i
+                                            class="fa-solid fa-location-dot pl-3"></i></a>
                                 </div>
                             </div>
                         </div>

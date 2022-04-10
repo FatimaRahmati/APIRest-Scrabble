@@ -35,7 +35,7 @@
 
         <div id="centralcontent" class="col-sm-12 col-md-12 col-lg-7 align-self-center">
             <!-- Pasos para jugar -->
-            <div class="container p-0 m-0">
+            <div class="container d-flex justify-content-around p-0 m-0">
                 <div class="row gamesteps my-4">
 
                     <div class="col-sm-12 col-md-6 col-lg-3">
@@ -45,15 +45,17 @@
                                         class="fa-solid fa-circle-user"></i></p>
                             </a>
                         </div>
+                        <div class="steptext">Únete</div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 justify-content-center">
                         <div class="step d-flex justify-content-center" data-name="two">
                             <a href="#">
                                 <p class="d-flex justify-content-center align-items-center m-0"><i
                                         class="fa-solid fa-spell-check"></i></p>
                             </a>
                         </div>
+                        <div class="steptext">Selecciona un idioma</div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-3">
@@ -63,6 +65,7 @@
                                         class="fa-solid fa-users"></i></p>
                             </a>
                         </div>
+                        <div class="steptext">Selecciona un amigo</div>
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-lg-3">
@@ -72,6 +75,7 @@
                                         class="fa-solid fa-chess-board"></i></p>
                             </a>
                         </div>
+                        <div class="steptext">Empieza la partida</div>
                     </div>
 
                 </div>
@@ -81,7 +85,7 @@
                     partida!</div> -->
             </div>
 
-            <div class="container boton mt-4">
+            <div class="container boton my-5">
                 <a class="botonlink" href="#login">REGÍSTRATE</a>
             </div>
 
@@ -89,7 +93,7 @@
 
 
             <!-- Carousel inferior con los beneficios de jugar al Scrabble. -->
-            <div class="container carousel-benefits mt-5">
+            <div class="container carousel-benefits my-5">
                 <div id="benefits" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#benefits" data-slide-to="0" class="active"></li>

@@ -2,20 +2,20 @@
   
 /*-----------------------------------------SCRABBLE-------------------------------*/
 
-/* #scrabble-page .row{
- /*    position: relative;
-    background: white;
+#scrabble-page {
+font-family: 'Urbanist';
+font-size: 1.1rem;
+}
 
-} */
 /*-------General----------*/
 
 
-#centralcontent{
+/* #centralcontent{
     position: relative;
-}
+} */
 
 
-#centralcontent:before{  
+/* #centralcontent:before{  
     content: "";  
     width: 100%;
     height: 100%;
@@ -23,7 +23,7 @@
     top: 0;
     left: 0;    
     /* background-color: rgba(255, 255, 255, 0.425); */
-    background-image: url("../img/scrabble-2.jpg");
+ /*    background-image: url("../img/scrabble-2.jpg"); 
     background-repeat: repeat;  
     background-size: 12%;  
     background-blend-mode: screen;
@@ -31,7 +31,7 @@
     filter: opacity(0.32) brightness(1.5);
     z-index: -3;
     border: 3px solid black;
-}
+} */
 
 
 
@@ -77,6 +77,21 @@
     height: 9rem;
     border-radius: 50%;
     border: 18px solid transparent;   
+}
+
+.steptext{
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.4rem;
+    width: 100%;
+}
+
+.steptext:hover{
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: font-size 0.5s;
 }
 
 [data-name=one]::before{
@@ -136,8 +151,25 @@
     text-align: center;
 }
 
+.carousel-indicators{
+    bottom: -1.2rem;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: var(--dark-primary-color);
+}
 
 
+.carousel-indicators li:hover{
+    cursor: pointer;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: var(--dark-primary-color);
+}
 
 
 /*-----Información del juego-----------*/
@@ -163,6 +195,7 @@
 .gameicons{
     font-size: 2rem;
 }
+
 
 
 

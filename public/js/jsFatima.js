@@ -1,10 +1,7 @@
 //GUTENBERG - BOTÓN LEER MÁS
 let leermasButton = document.getElementById('botonLeer');
 leermasButton.addEventListener('click', changeContent);
-console.log(leermasButton);
 let leermasDiv = document.getElementById('leermas');
-console.log(leermasDiv);
-console.log(leermasDiv.classList.contains('show') );
 
 function changeContent(){
 
