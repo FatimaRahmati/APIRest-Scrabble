@@ -2,8 +2,7 @@
 
 let leermasButton = document.getElementById('botonLeer');
 console.log(leermasButton);
-/* console.log(document.querySelector[`p[data-player="1"`]); */
-/*leermasButton.addEventListener('click', changeContent());
+leermasButton.addEventListener('click', changeContent());
 let leermasDiv = document.getElementById('leermas');
 
 function changeContent(){
@@ -95,7 +94,7 @@ function selectElement(event){
     current.classList.remove(diferentClasses[1]);   
     current.classList.add('set-center');
 }
- */
+
 
 //MÉTODOS PARA PÁGINA SCRABBLE
 
