@@ -98,39 +98,28 @@ function selectElement(event){
 }
 
 
-/* function exitElement(event){
+//MÉTODOS PARA PÁGINA SCRABBLE
 
-    if (event.currentTarget){
-        console.log(event.target);
-        const obrasClass = obras.className;
-        const obrasClasses = obrasClass.split(" ");  
-        obras.classList.remove(obrasClasses[1]);
-        obras.classList.add('centro-izquierda');
-    
-        const comprenClass = compren.className;
-        const comprenClasses = comprenClass.split(" ");  
-        compren.classList.remove(comprenClasses[1]);
-        compren.classList.add('set-center');
-    
-        const valencianClass = valencian.className;
-        const valencianClasses = valencianClass.split(" ");  
-        valencian.classList.remove(valencianClasses[1]);
-        valencian.classList.add('centro-derecha');
-    }     
-
-} */
-
-
-
-
-/*Averiguar coordenadas*/
-/* let mapa = document.querySelector(".map");
-
-mapa.addEventListener('click', showCoords);
-
-function showCoords(event) {
-    var x = event.clientX;
-    var y = event.clientY;
-    var coords = "X coords: " + x + ", Y coords: " + y;
-    console.log(coords);
-  } */
+function currentGames() {
+    // 3 últimas partida en juego vía AJAX
+    const promise = axios.get("/api/info/currentgames/3");
+    promise
+      .then((response) => {
+        console.log("currescr_indexnt games:", response);
+        this.createCard(
+          "Current Games",
+          response.status,
+          response.statusText,
+          response.data
+        );
+      })
+      .catch((error) => {
+        console.log("ERROR: " + error);
+        this.createCard(
+          "Current Games",
+          error.response.status,
+          error.response.statusText,
+          error.response.data
+        );
+      });
+}

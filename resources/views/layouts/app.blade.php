@@ -54,7 +54,7 @@
                 </ul>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="navbar-brand pr-2"><a href="dashboard"><i class="fa-solid fa-circle-user"
+                <div class="navbar-brand pr-2"><a href=""><i class="fa-solid fa-circle-user"
                             style="font-size: 40px; color: white"></i></a>
                 </div>
                 <div class="navbar-brand pr-2"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
