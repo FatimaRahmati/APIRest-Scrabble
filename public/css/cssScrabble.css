@@ -168,7 +168,23 @@ font-size: 1.1rem;
 }
 
 .carousel-control-prev, .carousel-control-next{
+    width: 0px;   
+}
+
+.carousel-control-prev{
+    left: -20px;
+}
+
+.carousel-control-next{
+    right: -20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-image: none;
+    font-size:2rem;
+    font-weight: 500;
     color: var(--dark-primary-color);
+    
 }
 
 
