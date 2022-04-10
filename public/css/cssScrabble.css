@@ -175,34 +175,85 @@
 }
 
 
-/*-----Información del juego-----------*/
+/*--------------------------------PANEL DERECHA Game info---------------------*/
 .gameinfo{
-/*     width: 18vw; */
-    height: 100%;
-    min-width: 20rem;
-    display: block;
-    float: right;
-    padding: 0; 
-    margin: 0;        
+   background-color: var(--light-primary-color );
+   box-shadow: inset 0 0 10px 5px var(--dark-primary-color);      
+}
+
+.gameinfo > div{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .gameinfo > ul{
     list-style-type: none;
+    color: var(--primary-text-color);
 }
 
 .gameinfo > ul li {
     padding-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    
+}
+
+.gameinfo > ul li > ul {
+    padding-bottom: 0.4rem;
+    font-size: 1.2rem;
+    border-bottom: none;
 }
 
 .gameicons{
-    font-size: 2rem;
+    font-size: 1.6rem;
+    color: var(--dark-primary-color);
+  
+}
+
+#ranking{
+    position: relative;
+}
+
+.rankinggames{
+    /* position: absolute;
+    overflow: hidden; */
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+    margin-left: 40px;
+    width: fit-content;   
+}
+
+.rankinggames > h5{
+    font-weight: 600;
+    margin: 0;    
+}
+
+
+
+/* .rankinggames > p{
+    padding-bottom: -10px;
+}
+ */
+
+
+/*-----------------------------PANEL IZQUIERDO Noticias-------------------------*/
+.gamenews{
+   /*  height: 100vh; */
+    /* background-color: white;
+    box-shadow: inset 0 0 10px 5px black;  */     
 }
 
 
 
 
-/*------Noticias------*/
+
+
+
+
+
+
+
+
 
 
 

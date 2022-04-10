@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id="">
+    <div id="app">
         <!--MENÚ DE NAVEGACIÓN / HEADER-->
         <nav class="navbar navbar-expand-xl overlay" id="barraNav">
 

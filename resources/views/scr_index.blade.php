@@ -9,7 +9,7 @@
 
     <div class="row">
         <!-- Noticias del Ceed o de otro sitio-->
-        <div id="gamenews" class="col-sm-6 col-md-6 col-lg-2 align-self-center">
+        <div class="col-sm-6 col-md-6 col-lg-2 align-self-center gamenews">
             <div class="news">
                 <div class="">Actualidad</div>
                 <div class="ceednews">
@@ -148,20 +148,38 @@
 
 
         <!--  Barra lateral derecha con la información actualizada del juego.  -->
-        <div class="col-sm-6 col-md-6 col-lg-3">
-            <ul class="pt-4">
+        <div class="gameinfo col-sm-6 col-md-6 col-lg-3 p-0 m-0">
+            <div class="text-center py-4">Información del juego</div>
+
+            <ul class="">
                 <li><i class="fa-solid fa-user-group gameicons"></i>
                     <?php echo $connectedUsers.' / '.$numberUsers ?>
                 </li>
-                <li class="d-flex">
+                <li id="ranking" class="d-flex flex-wrap">
                     <div><i class="fa-solid fa-trophy gameicons"></i>
-                        <a v-on:click.prevent="ranking" href="#">Ranking usuarios</a>
+                        <div class="rankinggames" data-ranking="1">
+                            <h5 class="m-0">Partida 1</h5>
+                            <p class=" p-0 m-0" data-player="0">Jugador 1: 50 puntos</p>
+                            <p class="p-0 m-0" data-player="0-0">Jugador 2: 300 puntos</p>
+                        </div>
+                        <div class="rankinggames" data-ranking="2">
+                            <h5>Partida 2</h5>
+                            <p class="p-0 m-0" data-player="1">Jugador 1: 50 puntos</p>
+                            <p class="p-0 m-0" data-player="1-1">Jugador 2: 300 puntos</p>
+                        </div>
+                        <div class="rankinggames" data-ranking="3">
+                            <h5>Partida 3</h5>
+                            <p class="p-0 m-0" data-player="2">Jugador 1: 50 puntos</p>
+                            <p class="p-0 m-0" data-player="2-2">Jugador 2: 300 puntos</p>
+                        </div>
                     </div>
                     <!-- <div class="pl-3">Aquí pondremos la </div> -->
                 </li>
-                <li><i class="fa-solid fa-chess-board gameicons"></i><?php echo $playingGames ?></li>
-                <li><i class="fa-solid fa-earth-africa gameicons"></i><?php echo $nacionalities ?></li>
-                <li><i class="fa-solid fa-spell-check"></i>
+                <li><i class="fa-solid fa-chess-board gameicons"></i><?php echo $playingGames.' partidas en juego' ?>
+                </li>
+                <li><i class="fa-solid fa-earth-africa gameicons"></i><?php echo $nacionalities.' nacionalidades' ?>
+                </li>
+                <li class="d-flex"><i class="fa-solid fa-spell-check gameicons"></i>
                     <ul>
                         <?php foreach ($languages as $lang): ?>
                         <li><?php echo $lang->name ?></li>
