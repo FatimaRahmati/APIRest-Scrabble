@@ -1,20 +1,16 @@
 //GUTENBERG - BOTÓN LEER MÁS
 
 let leermasButton = document.getElementById('botonLeer');
-console.log(leermasButton);
-leermasButton.addEventListener('click', changeContent());
-let leermasDiv = document.getElementById('leermas');
+leermasButton.addEventListener('click', changeContent);
 
 function changeContent(){
-
+    let leermasDiv = document.querySelector('#leermas');
     if(leermasDiv.classList.contains('show') == true){
         leermasButton.innerHTML = "............. Leer más .............";
     }else{
-        leermasButton.innerHTML = "............. Leer menos ............."
+        leermasButton.innerHTML = "............. Leer menos .............";
     }
 }
-
-
 
 
 //LOS TRABAJOS EN UNA IMPRENTA DEL S.XV.
@@ -96,53 +92,6 @@ function selectElement(event){
 }
 
 
-//MÉTODOS PARA PÁGINA SCRABBLE
-
-async function currentGames() {
-    // 3 últimas partida en juego vía AJAX
-    try{
-        
-        
-        const promise = await fetch("/api/info/currentgames/3");
-        const response = await promise.json();  
-        console.log(response);        
-        for (let i=0; i<response.length; i++){
-            /* console.log(document.querySelector(`[data-player="1"]`)); */            
-            ({language, player1, player2, player_1_score, player_2_score} = response[i]);
-            document.querySelector(`[data-player="${i}"]`).innerHTML = `${player1.name}: ${player_1_score} puntos`;
-            document.querySelector(`[data-player="${i}-${i}"]`).innerHTML = `${player2.name}: ${player_2_score} puntos`;          
-        } 
-
-    }
-    catch (error) {
-    console.log(error);
-    }
-}
-currentGames();
-
-function ranking() {
-    // Rankig de los tres mejores usuario en español
-    const promise = axios.get("/api/info/ranking/es/3");
-    promise
-      .then((response) => {
-        console.log("Ranking:", response);
-        this.createCard(
-          "Ranking",
-          response.status,
-          response.statusText,
-          response.data
-        );
-      })
-      .catch((error) => {
-        console.log("ERROR: " + error);
-        this.createCard(
-          "Ranking",
-          error.response.status,
-          error.response.statusText,
-          error.response.data
-        );
-      });
-  }
 
 
 

@@ -1,6 +1,6 @@
 @extends('layouts.app',
 ['title' => 'Info Scrabble', 'css_files' => ['test_scr_index', 'cssScrabble'],
-'js_files' => ['test_scr_index']])
+'js_files' => ['test_scr_index', 'jsScrabble']])
 
 @section('content')
 
@@ -157,17 +157,17 @@
                 </li>
                 <li id="ranking" class="d-flex flex-wrap">
                     <div><i class="fa-solid fa-trophy gameicons"></i>
-                        <div class="rankinggames" data-ranking="1">
+                        <div class="rankinggames" data-ranking="0">
                             <h5 class="m-0">Partida 1</h5>
                             <p class=" p-0 m-0" data-player="0">Jugador 1: 50 puntos</p>
                             <p class="p-0 m-0" data-player="0-0">Jugador 2: 300 puntos</p>
                         </div>
-                        <div class="rankinggames" data-ranking="2">
+                        <div class="rankinggames" data-ranking="1">
                             <h5>Partida 2</h5>
                             <p class="p-0 m-0" data-player="1">Jugador 1: 50 puntos</p>
                             <p class="p-0 m-0" data-player="1-1">Jugador 2: 300 puntos</p>
                         </div>
-                        <div class="rankinggames" data-ranking="3">
+                        <div class="rankinggames" data-ranking="2">
                             <h5>Partida 3</h5>
                             <p class="p-0 m-0" data-player="2">Jugador 1: 50 puntos</p>
                             <p class="p-0 m-0" data-player="2-2">Jugador 2: 300 puntos</p>
@@ -191,19 +191,5 @@
 
     </div>
 </div>
-
-<!-- 
-<aside class="sidebar">
-    <ul>
-        <li class="input-menu"><a href="{{ route('register') }}">Registro</a></li>
-        <li class="input-menu upper-margin"><a href="{{ route('login') }}">Login</a>
-        <li>
-        <li class="input-menu upper-margin"><a v-on:click.prevent="ranking" href="#">Ranking usuarios</a></li>
-        <li class="input-menu"><a v-on:click.prevent="currentGames" href="#">Últimas partidas en juego</a></li>
-        <li class="input-menu"><a v-on:click.prevent="generalInfo" href="#">Información sobre el sistema</a></li>
-    </ul>
-</aside>
-<card-container-component :cards="c_cards"></card-container-component> -->
-
 
 @endsection
