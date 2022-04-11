@@ -54,12 +54,23 @@ class InfoController extends Controller
         ];
     }
 
-    // renderiza la página de información de scrabble
-    public function index()
+    // renderiza la página de información o información extra del scrabble
+    public function index(Request $request)
     {
+        $uri = $request->path();
+
         $data = $this->generateGeneralInfo();
 
-        return view("scr_index", $data);
+        switch ($uri) {
+            case "scrabble":
+                $layout = "scr_index";
+                break;
+            case "scrabble/info-extra":
+                $layout = "scr_info";
+                break;
+        }
+
+        return view($layout, $data);
     }
 
     // Información general de la aplicación
