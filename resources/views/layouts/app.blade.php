@@ -46,7 +46,7 @@
                             Valencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="scrabble">Scrabble</a>
+                        <a class="nav-link nav-typografy" href="../scrabble">Scrabble</a>
                     </li>
                     <!-- <li>
                         
@@ -54,11 +54,11 @@
                 </ul>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="navbar-brand pr-2"><a href=""><i class="fa-solid fa-circle-user"
+                <div class="navbar-brand pr-2"><a href="{{ route('login') }}"><i class="fa-solid fa-circle-user"
                             style="font-size: 40px; color: white"></i></a>
                 </div>
                 <div class="navbar-brand pr-2"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
-                            alt="Redireccionamiento a la página del CEEDCV" src="img/logo-ceedcv2.png"></a>
+                            alt="Redireccionamiento a la página del CEEDCV" src="../img/logo-ceedcv2.png"></a>
                 </div>
             </div>
         </nav>

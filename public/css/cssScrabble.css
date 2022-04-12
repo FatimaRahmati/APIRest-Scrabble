@@ -2,16 +2,23 @@
   
 /*-----------------------------------------SCRABBLE-------------------------------*/
 
+
+
 /*-------General----------*/
 
 #scrabble-page {
     font-family: 'Urbanist';
     font-size: 1.1rem;
-    background-color: rgb(240, 238, 208);
+    background-color:var(--light-primary-color );
+     /* rgb(240, 238, 208); */
 }
     
 
 /*---Pasos de registro---*/
+.stepgames{
+    width: 90%;
+}
+
 
 .step{
     position: relative;
@@ -61,13 +68,7 @@
     text-align: center;
     line-height: 1.4rem;
     width: 100%;
-}
-
-.steptext:hover{
     cursor: pointer;
-    font-size: 1.15rem;
-    font-weight: 500;
-    transition: font-size 0.5s;
 }
 
 [data-name=one]::before{
@@ -116,10 +117,6 @@
     height: fit-content;
 }
 
-.carousel-inner{
-   /*  background-color: #a84e8c; */
-}
-
 #benefits p{
     font-size: 0.9rem;
     line-height: 1.5rem;
@@ -149,22 +146,14 @@
     background-color: var(--dark-primary-color);
 }
 
-
+.carousel-inner{
+    width: 80%;
+    text-align: center;
+}
 .carousel-indicators li:hover{
     cursor: pointer;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    width: 0px;   
-}
-
-.carousel-control-prev{
-    left: -20px;
-}
-
-.carousel-control-next{
-    right: -20px;
-}
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-image: none;
@@ -175,25 +164,39 @@
 }
 
 
+/*-------------------------------BOTÓN REGÍSTRATE-----------------------------*/
+#centralcontent .boton{
+    width: 90%;
+}
+
+
+
+
 /*--------------------------------PANEL DERECHA Game info---------------------*/
+#centralcontent{
+    height: 100%;
+}
+
 .gameinfo{
-   background-color: var(--light-primary-color );
-   box-shadow: inset 0 0 10px 5px var(--dark-primary-color);      
+   background-color: rgb(241, 240, 220);
 }
 
 .gameinfo > div{
     font-size: 1.3rem;
     font-weight: 500;
     text-transform: uppercase;
+    background-color: var(--dark-primary-color);
+    color: white;
 }
 
 .gameinfo > ul{
     list-style-type: none;
     color: var(--primary-text-color);
+    padding-top: 1.2em;
 }
 
 .gameinfo > ul li {
-    padding-bottom: 1rem;
+    padding-bottom: 1.3rem;
     font-size: 1rem;
     
 }
@@ -210,17 +213,18 @@
   
 }
 
-#ranking{
-    position: relative;
+.gameinfo > ul li > i{
+    padding-right: 0.8em;
+
 }
 
 .rankinggames{
-    /* position: absolute;
-    overflow: hidden; */
-    font-size: 1rem;
-    border-bottom: 1px solid black;
-    margin-left: 40px;
     width: fit-content;   
+    margin-bottom: 1em;
+}
+
+.rankinggames p{
+    font-size: 0.9em;
 }
 
 .rankinggames > h5{
@@ -230,31 +234,55 @@
 
 
 
-/* .rankinggames > p{
-    padding-bottom: -10px;
-}
- */
-
 
 /*-----------------------------PANEL IZQUIERDO Noticias-------------------------*/
-.gamenews{
-   /*  height: 100vh; */
-    /* background-color: white;
-    box-shadow: inset 0 0 10px 5px black;  */     
+
+.news{
+    background-color: var(--dark-primary-color);
 }
 
+.news > div > p{
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 0.7em;
+}
 
+.newslist{
+    list-style-type: none;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+    margin: 0;
+    padding: 1em;
+    cursor: pointer;
+    color: white;
+}
 
+.newslist li{
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    
+}
 
+.newslist li img{
+    margin-bottom: 0.5em;
 
+}
 
+.newslist li p{
+    font-weight: 400;
+    margin: 0;
+}
 
+.newslist .pie-cdo{
+    color: rgb(209, 205, 205);
+    font-size: 0.8rem;
+}
 
-
-
-
-
-
+.newsimage{
+    width: 100%;
+}
 
 
 /*--------MEDIA QUERYS------------*/
