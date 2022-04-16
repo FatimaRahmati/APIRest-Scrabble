@@ -1,13 +1,42 @@
 <!-- el fichero css de login me vale para el registro -->
-@extends('layouts.app', 
-    ['title' => 'Reinicio contraseña', 'css_files' => ['test_scr_login'],
-    'js_files' => ['test_scr_reset']])
+@extends('layouts.app',
+['title' => 'Reinicio contraseña', 'css_files' => ['test_scr_login'],
+'js_files' => ['test_scr_reset']])
 
 @section('content')
-    <div></div>
+
+
+<div class="container-fluid register-page my-5">
+    <h2 class="d-flex justify-content-center mb-4">
+        Introduce tu nueva contraseña
+    </h2>
+    <div class="container d-flex justify-content-center align-self-center">
+        <form action="{{ route('password.request') }}" method="POST">
+
+            <input type="hidden" name="token" value="{{ $token }}">
+
+            <input type="email" id="useremail" name="useremail" placeholder="Email" value="{{old('useremail')}}"
+                autocomplete="on" required /><br>
+
+            <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" minlength="6"
+                maxlength="20" autocomplete="off" required /><br>
+
+            <input type="password" id="okpassword" name="userpassword_confirmation" placeholder="Confirme su contraseña"
+                minlength="6" maxlength="20" autocomplete="off" required /><br>
+
+            <input class="boton botonlink" type="submit" value="Enviar">
+
+        </form>
+    </div>
+</div>
+
+
+
+
+<!--  <div></div>
     <div class="form">
         <form method="POST" action="{{ route('password.request') }}">
-            @csrf <!-- por razones educativas está desactivado -->
+            @csrf <!-- por razones educativas está desactivado 
 
             <input type="hidden" name="token" value="{{ $token }}">
 
@@ -46,5 +75,5 @@
                 @endif
             </div>
         </div>
-    @endif
+    @endif -->
 @endsection

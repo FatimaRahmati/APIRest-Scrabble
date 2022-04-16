@@ -1,0 +1,35 @@
+$form-font: 'Urbanist';
+$form-fontsize: 1.1rem;
+$separation-inputs: 0.2rem;
+$separation-content-form: 0.5em;
+$input-width: 20rem;
+$input-height: 3rem;
+
+.register-page{
+    font-family: $form-font;
+    font-size: $form-fontsize;
+
+    form {
+    
+        input{         
+            width: $input-width;
+            height: $input-height;
+            margin-bottom: $separation-inputs;
+            border: none;
+            padding-left: $separation-content-form;           
+        }
+    
+        select{
+            margin-bottom: $separation-inputs;        
+            width: $input-width;
+            height: $input-height;
+            padding-left: $separation-content-form;    
+        }  
+    
+        [type=submit]{
+            cursor: pointer;
+        }
+        
+    }
+}
+

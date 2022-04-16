@@ -1,0 +1,24 @@
+.register-page {
+  font-family: "Urbanist";
+  font-size: 1.1rem;
+}
+
+.register-page form input {
+  width: 20rem;
+  height: 3rem;
+  margin-bottom: 0.2rem;
+  border: none;
+  padding-left: 0.5em;
+}
+
+.register-page form select {
+  margin-bottom: 0.2rem;
+  width: 20rem;
+  height: 3rem;
+  padding-left: 0.5em;
+}
+
+.register-page form [type=submit] {
+  cursor: pointer;
+}
+

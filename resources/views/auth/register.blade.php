@@ -1,11 +1,46 @@
 <!-- el fichero css de login me vale para el registro -->
 @extends('layouts.app',
-['title' => 'Registro', 'css_files' => ['test_scr_login'],
+['title' => 'Registro', 'css_files' => ['test_scr_login', 'register'],
 'js_files' => ['test_scr_register']])
 
 @section('content')
 
 
+<div class="container-fluid register-page my-5">
+    <h2 class="d-flex justify-content-center mb-4">
+        Regístrate ahora y comienza a jugar
+    </h2>
+    <div class="container d-flex justify-content-center align-self-center">
+        <form action="{{ route('register') }}" method="POST">
+
+            <input type="text" id="username" name="username" maxlength="20" placeholder="Nombre de usuario"
+                value="{{old('username')}}" autocomplete="on" required /><br>
+
+            <input type="email" id="useremail" name="useremail" placeholder="Email" value="{{old('useremail')}}"
+                autocomplete="on" required /><br>
+
+            <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" minlength="6"
+                maxlength="20" autocomplete="off" required /><br>
+
+            <input type="password" id="okpassword" name="userpassword_confirmation" placeholder="Confirme su contraseña"
+                minlength="6" maxlength="20" autocomplete="off" required /><br>
+
+            <input type="text" id="usercountry" name="usercountry" placeholder="País de residencia" autocomplete="on"
+                required /><br>
+            <select id="languages" name="languages">
+                <!--  <option value="selecciona">Lenguaje preferido</option> -->
+                <option value="español">Español</option>
+                <option value="ingles">Inglés</option>
+                <option value="indiferente">Indiferente</option>
+            </select><br>
+            <input class="boton botonlink" type="submit" value="Enviar">
+
+        </form>
+    </div>
+    <div class="d-flex justify-content-center mt-4">¿Ya tienes una cuenta? <a class="pl-1" href="{{ route('login') }}">
+            Inicia
+            sesión</a></div>
+</div>
 
 
 
@@ -20,7 +55,7 @@
         <form method="POST" action="{{ route('register') }}"> 
             @csrf <!-- por razones educativas está desactivado
 <label for="name">Nombre</label>
-<input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus>
+<input id="name" type="text" name="name" value="+{{ old('name') }}" required autofocus>
 <br>
 <label for="email">Correo electrónico</label>
 <input id="email" type="email" name="email" value="{{ old('email') }}" required>

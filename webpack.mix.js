@@ -23,6 +23,7 @@ mix
 
 // Sass
 mix
+  .sass("resources/assets/sass/register.scss", "public/css")
   .sass("resources/assets/sass/test.scss", "public/css")
   .sass("resources/assets/sass/test_welcome.scss", "public/css")
   .sass("resources/assets/sass/test_scr_index.scss", "public/css")

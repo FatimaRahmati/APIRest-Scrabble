@@ -10,6 +10,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/cssImprenta.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/cssScrabble.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/register.css') }}" rel="stylesheet" />
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap');
     </style>
@@ -30,27 +31,25 @@
             <div class="collapse navbar-collapse despliegue" id="collapsibleNavbar">
                 <ul class="navbar-nav nav-typografy">
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../#app">Gutenberg</a>
+                        <a class="nav-link nav-typografy" href="../../#app">Gutenberg</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../#trabajos">Trabajos en el S.XV</a>
+                        <a class="nav-link nav-typografy" href="../../#trabajos">Trabajos en el S.XV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../#difusion">Difusión de la idea</a>
+                        <a class="nav-link nav-typografy" href="../../#difusion">Difusión de la idea</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../#españa">Primeros libros en España</a>
+                        <a class="nav-link nav-typografy" href="../../#españa">Primeros libros en España</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../#lugares-valencia">Lugares emblemáticos en
+                        <a class="nav-link nav-typografy" href="../../#lugares-valencia">Lugares emblemáticos en
                             Valencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-typografy" href="../scrabble">Scrabble</a>
+                        <a class="nav-link nav-typografy" href="../../scrabble">Scrabble</a>
                     </li>
-                    <!-- <li>
-                        
-                    </li> -->
+
                 </ul>
             </div>
             <div class="d-flex justify-content-between">
@@ -58,7 +57,7 @@
                             style="font-size: 40px; color: white"></i></a>
                 </div>
                 <div class="navbar-brand pr-2"><a href="http://www.ceedcv.es"><img class="img-link" width="140px"
-                            alt="Redireccionamiento a la página del CEEDCV" src="../img/logo-ceedcv2.png"></a>
+                            alt="Redireccionamiento a la página del CEEDCV" src="../../img/logo-ceedcv2.png"></a>
                 </div>
             </div>
         </nav>
@@ -85,6 +84,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/jsImprenta.js') }}"></script>
     <script src="{{ asset('js/jsScrabble.js') }}"></script>
+
     <!--    @foreach ($js_files as $file)
     <script src="{{ asset('js/' . $file . '.js') }}"></script>
     @endforeach -->
