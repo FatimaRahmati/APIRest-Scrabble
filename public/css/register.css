@@ -1,5 +1,5 @@
 .register-page {
-  height: calc(100vh - 144px);
+  height: 100vh;
   border-radius: 4%;
   font-family: "Urbanist";
   font-size: 1.1rem;
