@@ -15,7 +15,6 @@
             <p>para acceder a todo el contenido</p>
         </div>
     </div>
-
 </div>
 
 @endsection

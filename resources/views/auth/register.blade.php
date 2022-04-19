@@ -5,36 +5,33 @@
 
 @section('content')
 
-
 <div class="container-fluid register-page my-5">
     <h2 class="d-flex justify-content-center mb-4">
         Regístrate ahora y comienza a jugar
     </h2>
     <div class="container d-flex justify-content-center align-self-center">
-        <form action="{{ route('register') }}" method="POST/scrabble/register">
+        <form action="{{ route('register') }}" method="POST">
 
-            <input type="text" id="username" name="username" maxlength="20" placeholder="Nombre de usuario"
-                value="{{old('username')}}" autocomplete="on" required /><br>
+            <input type="text" id="name" name="name" maxlength="20" placeholder="Nombre de usuario"
+                value="{{old('name')}}" autocomplete="on" required /><br>
 
-            <input type="email" id="useremail" name="useremail" placeholder="Email" value="{{old('useremail')}}"
-                autocomplete="on" required /><br>
-
-            <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" minlength="4"
-                maxlength="20" autocomplete="off" required /><br>
-
-            <input type="password" id="okpassword" name="userpassword_confirmation" placeholder="Confirme su contraseña"
-                minlength="6" maxlength="20" autocomplete="off" required /><br>
-
-            <input type="text" id="usercountry" name="usercountry" placeholder="País de residencia" autocomplete="on"
+            <input type="email" id="email" name="email" placeholder="Email" value="{{old('email')}}" autocomplete="on"
                 required /><br>
+
+            <input type="password" id="password" name="password" placeholder="Contraseña" minlength="4" maxlength="20"
+                autocomplete="off" required /><br>
+
+            <input type="password" id="password-confirm" name="password_confirmation"
+                placeholder="Confirme su contraseña" minlength="6" maxlength="20" autocomplete="off" required /><br>
+
+            <input type="text" id="country" name="country" placeholder="País (primeras dos letras)" autocomplete="on"
+                required /><br>
+
             <select id="languages" name="languages">
-                <!--  <option value="selecciona">Lenguaje preferido</option> -->
                 <option value="español">Español</option>
                 <option value="ingles">Inglés</option>
-
             </select><br>
             <input class="boton botonlink" type="submit" value="Enviar">
-
         </form>
     </div>
     <div class="d-flex justify-content-center mt-4">¿Ya tienes una cuenta? <a class="pl-1" href="{{ route('login') }}">
@@ -42,8 +39,7 @@
 </div>
 
 
-
-<!--  <aside class="sidebar">
+<!-- <aside class="sidebar">
         <ul>
             <li class="input-menu"><a v-on:click="automatic_register" href="#">Registro automático</a></li>
             <li class="input-menu"><a v-on:click="wrong_register" href="#">Registro erróneo</a></li>
@@ -74,7 +70,10 @@
     Registrar
 </button>
 </form>
-</div>
+</div> -->
+
+
+
 @if ($errors->isNotEmpty())
 <div class="error">
     <div>
@@ -101,5 +100,5 @@
         @endif
     </div>
 </div>
-@endif -->
+@endif
 @endsection

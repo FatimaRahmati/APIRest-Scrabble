@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container-fluid d-flex align-items-center error-page">
-    <div class="background"></div>
+    <div class="background-403"></div>
     <div class="container text-center ">
         <div class="error-number">Bad credentials</div>
         <div class="error-name">No access... Try again</div>

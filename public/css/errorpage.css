@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   position: relative;
-  /* overflow: hidden; */
-  /* font-family: $form-font; */
 }
 
 .error-page .background-401 {
@@ -22,6 +20,20 @@
   filter: opacity(0.8) grayscale(1) brightness(1.3);
 }
 
+.error-page .background-403 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(/images/wrongway.jpg?f8af917fadcf3ef4977b796fadce19ec);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 90%;
+  filter: opacity(0.4) grayscale(1) brightness(1.3);
+}
+
 .error-page .background-404 {
   position: absolute;
   margin: 0;
@@ -34,6 +46,20 @@
   background-size: cover;
   background-position: right 90%;
   filter: opacity(0.4) grayscale(1) brightness(1.3);
+}
+
+.error-page .background-500 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(/images/colorwires.jpg?4cd628581c972503f65b018d192672f1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 90%;
+  filter: opacity(0.5) grayscale(1) brightness(1.3);
 }
 
 .error-page .error-number {

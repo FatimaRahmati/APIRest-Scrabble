@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Error 500</title>
-</head>
-<body>
-    <p>Error interno del servido</p>
-</body>
-</html>
+@extends('layouts.app',
+['title' => 'Registro', 'css_files' => ['test_scr_login', 'errorpage'],
+'js_files' => ['test_scr_register']])
+
+@section('content')
+
+<div class="container-fluid d-flex align-items-center error-page">
+    <div class="background-500"></div>
+    <div class="container text-center ">
+        <div class="error-number"> Ooopsss!</div>
+        <div class="error-name">Internal server error...</div>
+    </div>
+</div>
+
+@endsection
