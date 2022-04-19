@@ -7,14 +7,6 @@
     font-family: $form-font;
     font-size: $form-fontsize;
 
-
-    @mixin dimensions {
-        margin-bottom: $separation-inputs;        
-        width: $input-width;
-        height: $input-height;
-        padding-left: $separation-content-form;    
-    }
-
     form { 
         /* background-color: $dark-primary-color; */
         padding: 10px;
@@ -38,7 +30,7 @@
                 border-top-right-radius: 10% 60%;
                 border-bottom-right-radius: 10% 60%;
                 border-bottom: none;                      
-                outline: none;        
+                outline: none;  
                 
             }
         }        
@@ -56,6 +48,17 @@
                 transition: transform 0.3s linear, background-color 0.3s linear;
             }
 
+        }
+
+        p{
+            color: red;
+            font-size: $form-fontsize * 0.8;
+            line-height: $form-fontsize;
+            padding-left: $separation-content-form;   
+            width: $input-width;
+            height: $input-height;
+            word-wrap: break-word;
+            margin: 0;
         }
         
     }

@@ -9,10 +9,8 @@
     <div class="container text-center ">
         <div class="error-number">Bad credentials</div>
         <div class="error-name">No access... Try again</div>
-        <div class="error-link"><a class="" href="{{ route('register') }}">
-                Regístrate </a> o <a class="" href="{{ route('login') }}">
+        <div class="error-link"> Vuelve e <a class="" href="{{ route('login') }}">
                 Inicia sesión</a>
-            <p>para acceder a todo el contenido</p>
         </div>
     </div>
 </div>
