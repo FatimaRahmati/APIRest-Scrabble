@@ -1,24 +1,53 @@
 .register-page {
+  height: calc(100vh - 144px);
+  border-radius: 4%;
   font-family: "Urbanist";
   font-size: 1.1rem;
 }
 
-.register-page form input {
-  width: 20rem;
-  height: 3rem;
-  margin-bottom: 0.2rem;
-  border: none;
-  padding-left: 0.5em;
+.register-page form {
+  /* background-color: $dark-primary-color; */
+  padding: 10px;
+  color: white;
 }
 
+.register-page form input:not([type=submit]),
 .register-page form select {
-  margin-bottom: 0.2rem;
-  width: 20rem;
+  margin-bottom: 0.4rem;
+  width: 18rem;
   height: 3rem;
-  padding-left: 0.5em;
+  padding-left: 0.8em;
+  border: none;
+  border-bottom: 1px solid #607D8B;
+  transition: all 0.25s linear;
+  background-color: #CFD8DC;
+}
+
+.register-page form input:not([type=submit]):focus-visible,
+.register-page form input:not([type=submit]):link,
+.register-page form select:focus-visible,
+.register-page form select:link {
+  background-color: white;
+  border-top-left-radius: 10% 60%;
+  border-bottom-left-radius: 10% 60%;
+  border-top-right-radius: 10% 60%;
+  border-bottom-right-radius: 10% 60%;
+  border-bottom: none;
+  outline: none;
 }
 
 .register-page form [type=submit] {
+  transform: translateY(1.6rem);
+  border: none;
   cursor: pointer;
+}
+
+.register-page form [type=submit]:hover,
+.register-page form [type=submit]:focus-visible {
+  box-shadow: none;
+  background-color: #607D8B;
+  color: #CFD8DC;
+  transform: translateY(1.2rem);
+  transition: transform 0.3s linear, background-color 0.3s linear;
 }
 

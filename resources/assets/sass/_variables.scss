@@ -1,4 +1,5 @@
 
+
 // Body
 $body-bg: #40424d;
 
@@ -27,12 +28,27 @@ $color_printer: coral;
 $color_scrabble: indianred;
 
 // src_index
-$color_menu: rgb(172, 166, 166)
+$color_menu: rgb(172, 166, 166);
+
+//Colors
+$dark-primary-color: #455A64;
+$default-primary-color: #607D8B;
+$light-primary-color: #CFD8DC; 
+$light-secondary-color: #d6dfe4; 
+$text-primary-color: #FFFFFF; 
+$accent-color: #009688; 
+$primary-text-color: #212121; 
+$secondary-text-color: #757575; 
+$divider-color: #BDBDBD;
+
+
 
 // form pages
-/* $form-font: 'Urbanist' sans-serif;
+$principal-content-height: calc(100vh - 144px);
+$page-width: 25rem;
+$form-font: 'Urbanist';
 $form-fontsize: 1.1rem;
-$separation-inputs: 0.3rem;
-$separation-content-form: 0.5em;
-$input-width: 20rem;
-$input-height: 3rem; */
+$separation-inputs: 0.4rem;
+$separation-content-form: 0.8em;
+$input-width: 18rem;
+$input-height: 3rem;

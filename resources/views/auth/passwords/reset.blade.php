@@ -55,25 +55,27 @@
                   
         </form>
     </div>
-    @if ($errors->isNotEmpty())
-        <div class="error">
-            <div>
-                <h4>Error modo 1</h4>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-            <div>
-                <h4>Error modo 2</h4>
-                @if ($errors->has('email'))
-                    <p><strong>email:</strong>{{ $errors->first('email') }}</p>
-                @endif
-                @if ($errors->has('password'))
-                    <p><strong>password:</strong>{{ $errors->first('password') }}</p>
-                @endif
-            </div>
-        </div>
-    @endif -->
+
+-->
+@if ($errors->isNotEmpty())
+<div class="error">
+    <div>
+        <h4>Error modo 1</h4>
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    <div>
+        <h4>Error modo 2</h4>
+        @if ($errors->has('email'))
+        <p><strong>email:</strong>{{ $errors->first('email') }}</p>
+        @endif
+        @if ($errors->has('password'))
+        <p><strong>password:</strong>{{ $errors->first('password') }}</p>
+        @endif
+    </div>
+</div>
+@endif
 @endsection

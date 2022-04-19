@@ -1,33 +1,61 @@
-$form-font: 'Urbanist';
-$form-fontsize: 1.1rem;
-$separation-inputs: 0.2rem;
-$separation-content-form: 0.5em;
-$input-width: 20rem;
-$input-height: 3rem;
+@import "_variables";
+
 
 .register-page{
+    height: $principal-content-height; 
+    border-radius: 4%;
     font-family: $form-font;
     font-size: $form-fontsize;
 
-    form {
-    
-        input{         
-            width: $input-width;
-            height: $input-height;
-            margin-bottom: $separation-inputs;
-            border: none;
-            padding-left: $separation-content-form;           
-        }
-    
-        select{
+
+    @mixin dimensions {
+        margin-bottom: $separation-inputs;        
+        width: $input-width;
+        height: $input-height;
+        padding-left: $separation-content-form;    
+    }
+
+    form { 
+        /* background-color: $dark-primary-color; */
+        padding: 10px;
+        color:white;
+
+        input:not([type=submit]), select{         
             margin-bottom: $separation-inputs;        
             width: $input-width;
             height: $input-height;
-            padding-left: $separation-content-form;    
-        }  
+            padding-left: $separation-content-form;     
+            border: none;  
+            border-bottom: 1px solid $default-primary-color;
+            transition: all 0.25s linear;
+            background-color: $light-primary-color;
+                      
+            
+            &:focus-visible, &:link{
+                background-color: white;
+                border-top-left-radius: 10% 60%;
+                border-bottom-left-radius: 10% 60%;
+                border-top-right-radius: 10% 60%;
+                border-bottom-right-radius: 10% 60%;
+                border-bottom: none;                      
+                outline: none;        
+                
+            }
+        }        
     
         [type=submit]{
+            transform: translateY($separation-inputs * 4);
+            border: none;           
             cursor: pointer;
+
+            &:hover, &:focus-visible{
+                box-shadow: none;
+                background-color: $default-primary-color;
+                color: $light-primary-color;
+                transform: translateY($separation-inputs * 3);
+                transition: transform 0.3s linear, background-color 0.3s linear;
+            }
+
         }
         
     }

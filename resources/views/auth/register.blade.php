@@ -11,7 +11,7 @@
         Regístrate ahora y comienza a jugar
     </h2>
     <div class="container d-flex justify-content-center align-self-center">
-        <form action="{{ route('register') }}" method="POST">
+        <form action="{{ route('register') }}" method="POST/scrabble/register">
 
             <input type="text" id="username" name="username" maxlength="20" placeholder="Nombre de usuario"
                 value="{{old('username')}}" autocomplete="on" required /><br>
@@ -19,7 +19,7 @@
             <input type="email" id="useremail" name="useremail" placeholder="Email" value="{{old('useremail')}}"
                 autocomplete="on" required /><br>
 
-            <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" minlength="6"
+            <input type="password" id="userpassword" name="userpassword" placeholder="Contraseña" minlength="4"
                 maxlength="20" autocomplete="off" required /><br>
 
             <input type="password" id="okpassword" name="userpassword_confirmation" placeholder="Confirme su contraseña"
@@ -31,15 +31,14 @@
                 <!--  <option value="selecciona">Lenguaje preferido</option> -->
                 <option value="español">Español</option>
                 <option value="ingles">Inglés</option>
-                <option value="indiferente">Indiferente</option>
+
             </select><br>
             <input class="boton botonlink" type="submit" value="Enviar">
 
         </form>
     </div>
     <div class="d-flex justify-content-center mt-4">¿Ya tienes una cuenta? <a class="pl-1" href="{{ route('login') }}">
-            Inicia
-            sesión</a></div>
+            Inicia sesión</a></div>
 </div>
 
 
